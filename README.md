@@ -52,11 +52,11 @@ The game will be developed as a web-based application, requiring no downloads or
 ### **Application Functions** 
 
 
-### **Moves per round**
+### **--**
 
 
   
-### **Replay function**
+### **--**
 
 
 ## **Non-functional specifications**
@@ -89,13 +89,13 @@ The game will be developed as a web-based application, requiring no downloads or
 ## Mock Ups 
 The project includes a set of UI mockups that illustrate the core screens and user flow of the Hangman game. These mockups were constructed to guide the visual layout and core functionality before development began. 
 
-### Starting Page
+### -- Page
 
 Purpose:
 Elements:
 - 
 
-### Gameplay Page
+### -- Page
 
 Purpose:
 Elements:
@@ -105,9 +105,9 @@ Elements:
 ## Storyboards
 The project includes storyboards that documents the user experience and the user flow of the Hangman game.
 
-### Starting Page
+### -- Page
 
-### Gameplay Page
+### -- Page
 
 
 ## Risk Management
