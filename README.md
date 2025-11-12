@@ -1,11 +1,15 @@
 # Hangman
 
 ## **Primary Target Audience**
-Our primary target audience are 
+Our primary target audience includes high school and college students aged 13-18. The game is an educational tool that enables students to learn, play and compete with peers in a fun and interactive way. The game aims to encourage healthy competition between students, expand their vocabulary with word challenges and gamify education in an engaging way.
 
 ## **User Requirements** 
 ### Functional Requirements
-1. 
+1. Users can start a new game without signing in. 
+2. Users can guess words and receive immediate audio feedback.
+3. Users can compete against peers in real-time.
+4. The players can view the scoreboard and track their scores.
+
 
 ### Non-Functional Requirements
 1. 
