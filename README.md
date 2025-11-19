@@ -5,10 +5,15 @@ Our primary target audience includes high school and college students aged 13-18
 
 ## **User Requirements** 
 ### Functional Requirements
-1. Users can start a new game without signing in. 
-2. Users can guess words and receive immediate audio feedback.
-3. Users can compete against peers in real-time.
-4. The players can view the scoreboard and track their scores.
+1. Users can play the game as a 2 player game.
+2. The interface must allow users to start a game with minimal friction.
+3. Users can play directly on the server (no downloads required).
+4. Users can stop and return any time. 
+5. Users can guess words and receive immediate audio feedback.
+6. Users can compete against peers in real-time.
+7. Users can play with 3 difficulty levels: easy, medium and hard. 
+8. The players can view the scoreboard and track their scores.
+9. Users can easily pause, quit and restart the game through the settings menu on the gameplay. 
 
 
 ### Non-Functional Requirements
