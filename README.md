@@ -17,9 +17,13 @@ Our primary target audience includes high school and college students aged 13-18
 
 
 ### Non-Functional Requirements
-1. 
+1. The website is clean and intuitive without intrusive pop-ups and minimal clutter.
+2. The design must be accessible to users with varying needs (e.g high contrast, screen reader compatibility).
+3. The game loads within 3 seconds with a standard internet connection.
+4. The UI must avoid distracting graphics or excessive animations, focused on clarity.
+5. The game has a consistent look-and-feel across all pages.
+6. Information and instructions is concise and easy to skim but detailed enough for thorough readers.
    
-
 ## **System Requirements**
 ### Functional System Requirements
 1. The system must support accessibility standards (WCAG 2.1 compliance).
@@ -130,15 +134,15 @@ Risk management involves identifying potential issues that could affect the succ
 |Game logic (matching functionality) may malfunction or process scores incorrectly.| High | High | Test matching system regularly, use pseudocode or flowcharts to verify logic before implementation.|
 The interface may not be user-friendly or accessible for all users. | Medium | Medium | Follow WCAG 2.1 accessibility standards, conduct usability testing and simplify layout controls.|
 |Bugs or performance issues late in development delays completion | Medium | High | Test iteratively at each development stage and record identified issues for troubleshooting.|
-|Project scope is too complex, rendering difficult to complete within the given timeframe| Medium | High | Prioritise core Features first and add extra features after core functionality proves stable. |
+|Project scope is too complex, rendering difficult to complete within the given timeframe| Medium | High | Prioritise core features first and add extra features after core functionality proves stable. |
 
 ## Software Development Strategy
 ### Development strategy 
-This project will use the agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
+This project will use the Agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
 ### Core development phases
 #### 1. Initial set up 
 Set up Git repos. 
-Create folder structures and fill out readme file. 
+Create folder structures and fill out the README file. 
 Create wireframes and story boards. 
 #### 2. Functionality development
 Implement core game logic and features. 
