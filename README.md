@@ -122,7 +122,7 @@ Elements:
 - 'Instructions/help' button
 
 ### You Won Screen
-<img width="370" height="810" alt="You Won Screen" src="https://github.com/user-attachments/assets/eb2d6c21-68e6-4fe5-8c2d-56d0b449a250" />
+<img width="360" height="800" alt="You Won Screen" src="https://github.com/user-attachments/assets/eb2d6c21-68e6-4fe5-8c2d-56d0b449a250" />
 
 Purpose: Let's the user know they have won after they guess their word correctly
 Elements:
