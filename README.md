@@ -109,18 +109,56 @@ The game will be developed as a web-based application, requiring no downloads or
 ## Mock Ups 
 The project includes a set of UI mockups that illustrate the core screens and user flow of the Hangman game. These mockups were constructed to guide the visual layout and core functionality before development began. 
 
-### -- Page
+### Gameplay Screen
+<img width="360" height="800" alt="Gameplay Screen" src="https://github.com/user-attachments/assets/8d2fcde2-8103-4c80-9bc7-ec3270413715" />
 
-Purpose:
+Purpose: Displays the gameplay screen for the user to play the game
 Elements:
-- 
+- Hangman visual
+- Correct letter appear on the word in it's correct position
+- Colourful keyboard with correct/incorrect letters in green and red.
+- Enter button to enter the chosen letter
+- 'Pause' button
+- 'Instructions/help' button
 
-### -- Page
+### You Won Screen
+<img width="370" height="810" alt="You Won Screen" src="https://github.com/user-attachments/assets/eb2d6c21-68e6-4fe5-8c2d-56d0b449a250" />
 
-Purpose:
+Purpose: Let's the user know they have won after they guess their word correctly
 Elements:
-- 
+- Happy man visual
+- Full correct word displayed
+- Total points gained for that round by current player displayed
+- Button for player 2 to click in order to start their turn
+- 'Instructions/help' button
 
+### Instructions
+<img width="324" height="627" alt="Instructions" src="https://github.com/user-attachments/assets/61cd13e6-62f3-4e74-9b45-316024483b84" />
+
+Purpose: Shows the instructions to the user
+Elements:
+- 'How to play' section
+- Explanation on difficulty levels
+- 'X' button to exit
+
+### Exit
+<img width="343" height="249" alt="Exit" src="https://github.com/user-attachments/assets/8d9712b9-3c6c-4c91-84f5-7e94c0c7bb18" />
+
+Purpose: Pop up when user wants to exit
+Elements:
+- 'Yes' option
+- 'No' option
+
+### Pause
+<img width="324" height="330" alt="Pause" src="https://github.com/user-attachments/assets/f3a5f9b5-b18c-4055-b3ba-80e2700f5b1b" />
+
+
+Purpose: Pop up when user presses pause icon
+Elements:
+- 'Resume' option
+- 'Restart' option
+- 'X' button to exit
+- Instructions and Home buttons
 
 ## Storyboards
 The project includes storyboards that documents the user experience and the user flow of the Hangman game.
