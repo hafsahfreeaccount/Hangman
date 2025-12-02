@@ -13,7 +13,9 @@ Our primary target audience includes high school and college students aged 13-18
 6. Users can compete against peers in real-time.
 7. Users can play with 3 difficulty levels: easy, medium and hard. 
 8. The players can view the scoreboard and track their scores.
-9. Users can easily pause, quit and restart the game through the settings menu on the gameplay. 
+9. Users are displayed a you win or you lose screen accordingly.
+10. Users can easily pause, exit and restart the game through the settings menu on the gameplay.
+11. Users can view the instructions again if 'help' icon is clicked. 
 
 
 ### Non-Functional Requirements
@@ -27,6 +29,7 @@ Our primary target audience includes high school and college students aged 13-18
 ## **System Requirements**
 ### Functional System Requirements
 1. The system must support accessibility standards (WCAG 2.1 compliance).
+2. The system implements a game engine that handles correct letter logic and score tracking.
    
 ### Non-Functional Requirements
 1. The page should load within 3 seconds under average conditions.
@@ -71,17 +74,24 @@ The game will be developed as a web-based application, requiring no downloads or
 ### **Application Functions** 
 
 
-### **--**
-
-
+### **Scoreboard**
+The game has a scoring logic. Player will initially start off with a total number of points and for each wrong letter, a certain amount will be deducted from total until the minimum score is reached, indicating the player has lost the round and only gains minimal points. The correct score for each player is tracked, which is displayed at the end.
   
-### **--**
+### **Replay**
+The replay function will be of use when the game has ended. This way the user will have a choice of whether or not they wish to continue the game and restart. As the game ends there will be a reload button on the screen which the user can press which leads to the score and moves being reset. Then the player starts again straight after the game is reinitialised. The replay button will generate a new random layout so that users will stay engaged for longer periods of time.
+
+### **Pause Menu**
+The game loads up the pause menu when the settings icon is clicked, which includes 'Resume', 'Restart', 'Home' and 'Main Menu'.
 
 
 ## **Non-functional specifications**
 
 ### **Aesthetic** 
+The games aesthetic will consist of a minimal and calm aesthetic with simple and sharp designs including a soft, cartoony design for the hangman. The atmosphere is inspired by similar games with the aim to make users feel calm and relaxed. Things to note include:
 
+- Colour palette and font choices
+- Audio buttons
+- Art inspo which will help maintain consistency through development
 
 ### **Usability**
 - Consistency: The interface must maintain a consistent layout and style across all pages and screens. Buttons and actions should behave predictably across devices.
@@ -97,6 +107,10 @@ The game will be developed as a web-based application, requiring no downloads or
 - Minimal setup: Requires no downloads and the game loads automatically from the homepage.
  
 ### **Feedback Style**
+- Visuals: User should be presented with visual cues such as highlighting correct or incorrect letter selections.
+- Audio: Users receive audio feedback for correct letter selections, incorrect selections or key game events.
+- Score tracking: The game tracks scores and progress in real-time to keep players informed.
+- End of game: The game should provide end-of-game performance feedback, including correct word for learning purposes to users and scoreboard.
 
 
 ### **Basic needs**
@@ -104,6 +118,8 @@ The game will be developed as a web-based application, requiring no downloads or
 - Security and privacy: The game shouldn't require any personal data to play
 - Accessibility: All essential interactions must be achievable without advanced technical skills.
 - Reliability: Core features must always function correctly as well as being consistently available with minimal downtime.
+
+## Initial Flowcharts
 
 
 ## Mock Ups 
@@ -175,10 +191,10 @@ Risk management involves identifying potential issues that could affect the succ
 -------|------------|--------|----------------------------|
 | Limited experience with JavaScript, CSS or Flask increases coding errors or delay development. |Medium| High | Allow extra time for tutorials, share resources and delegate based on skill levels.| |
 |Difficulty integrating different team members code in Github cause version controls or lost progress. | Medium | Medium | Use Git branches, commit regularly and communicate before merges.|
-|Poor communication between team members contributes to inconsistent designs or missed tasks|Medium | High|Hold regular check-ins, use a shared document for updates and asking responsibilities clearly.|
-|Game logic (matching functionality) may malfunction or process scores incorrectly.| High | High | Test matching system regularly, use pseudocode or flowcharts to verify logic before implementation.|
+|Poor communication between team members contributes to inconsistent designs or missed tasks. |Medium | High|Hold regular check-ins, use a shared document for updates and asking responsibilities clearly.|
+|Game logic (letter selection functionality) may malfunction or process scores incorrectly. | High | High | Test matching system regularly, use pseudocode or flowcharts to verify logic before implementation.|
 The interface may not be user-friendly or accessible for all users. | Medium | Medium | Follow WCAG 2.1 accessibility standards, conduct usability testing and simplify layout controls.|
-|Bugs or performance issues late in development delays completion | Medium | High | Test iteratively at each development stage and record identified issues for troubleshooting.|
+|Bugs or performance issues late in development delays completion. | Medium | High | Test iteratively at each development stage and record identified issues for troubleshooting.|
 |Project scope is too complex, rendering difficult to complete within the given timeframe| Medium | High | Prioritise core features first and add extra features after core functionality proves stable. |
 
 ## Software Development Strategy
