@@ -160,7 +160,7 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 The project includes a set of UI mockups that illustrate the core screens and user flow of the Hangman game. These mockups were constructed to guide the visual layout and core functionality before development began. 
 
 ### Home Page Screen
-<img width="368" height="808" alt="Home Pag - Hangman" src="https://github.com/user-attachments/assets/b0f608e5-cfe1-4ed3-a974-d3fe09831d90" />
+<img width="392" height="800" alt="Frame 93 (1)" src="https://github.com/user-attachments/assets/692c28a1-1cbd-4d3d-a08e-04e677fe1c15" />
 
 Purpose: Displays the home page screen for the user to play Hangman.
 Elements:
@@ -169,7 +169,7 @@ Elements:
 - Play Now Button
 
 ### Loading Screen
-<img width="360" height="800" alt="Landing Screen" src="https://github.com/user-attachments/assets/edfae698-762d-4828-8133-85a57ba586cb" />
+<img width="360" height="800" alt="Landing Screen (1)" src="https://github.com/user-attachments/assets/649ded11-bdd4-4f1d-9a2e-754de09f0eab" />
 
 Purpose: Loads Hangman intitiailisation before user chooses a difficulty level to play the Hangman page.
 Elements:
@@ -177,7 +177,7 @@ Elements:
 - Hangman hanging hook for Hangman
 
 ### Difficulty Level Screen
-<img width="360" height="800" alt="Difficulty Level" src="https://github.com/user-attachments/assets/2d76ec30-66d6-4f4c-b9fe-c5f82e7ee8b5" />
+<img width="360" height="800" alt="Difficulty Level (4)" src="https://github.com/user-attachments/assets/1b6a7e43-896c-4300-88cd-9f4c7b51cb09" />
 
 Purpose: User chooses one of three difficulty levels from easy, medium and hard.
 - Back arrow button to home page
