@@ -276,16 +276,25 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
-|1.1| | | | | |
-|1.2| | | | | |
-|1.3| | | | | |
-|1.4| | | | | |
-|1.5| | | | | |
-|1.6| | | | | |
-|1.7| | | | | |
-|1.8| | | | | |
-|1.9| | | | | |
-|1.10| | | | | |
+|1.1|Launch the game website|Open game URL in browser|Main menu loads with play button, difficulty dropdown, and icons| | |
+|1.2|Start a game|Click play button|Difficulty levels are shown for user to choose| | |
+|1.3|Choose a difficulty level|Click easy, medium or hard|Player 1 gameplay screen appears with masked word and keyboard| | |
+|1.4|Player 1 guesses a correct letter|Player 1 taps a correct letter on the on-screen alphabet|Correct letter appears in the word; button turns green| | |
+|1.5|Player 1 guesses an incorrect letter|Player 1 taps a wrong letter|Letter turns red; rope/hangman progresses| | |
+|1.6|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible| | |
+|1.7|Player 1 loses|Player 1 runs out of attempts|Lose screen loads, correct word displayed, “Player 2’s Turn >” button visible| | |
+|1.8|Start Player 2 turn|Player 2 clicks “Player 2’s Turn >”|A new gameplay screen loads for Player 2 with a new word| | |
+|1.9|Player 2 guesses letters|Player 2 plays normally|Correct/incorrect visual feedback plays as expected| | |
+|1.10|Player 2 completes word|Player 2 wins their round|“YOU WON!” screen appears showing Player 2 points| | |
+|1.11|Player 2 fails the word|Player 2 runs out of attempts|“YOU LOST!” screen appears showing Player 2 points| | |
+|1.12|Final scoreboard displays|After Player 2’s round ends|Scoreboard loads showing Player 1 score + Player 2 score| | |
+|1.13|Pause button works|Player clicks pause icon during gameplay|Game freezes; input disabled until resumed| | |
+|1.14|Resume gameplay|Click resume button|Game continues from same state| | |
+|1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state| | |
+|1.16|Restart game during Player 1 or Player 2|Click restart button in pause menu|Current player's round resets with a new word| | |
+|1.17|Exit to home menu|Click exit in settings|Player is returned to the home screen| | |
+|1.18|Prevent double input|Tap the same letter twice|Second tap ignored, no error| | |
+
 
 
 ## Individual Contributions
