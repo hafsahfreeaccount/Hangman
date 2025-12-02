@@ -176,12 +176,23 @@ Elements:
 - 'X' button to exit
 - Instructions and Home buttons
 
+
 ## Storyboards
 The project includes storyboards that documents the user experience and the user flow of the Hangman game.
 
-### -- Page
+### Gameplay Screen
+<img width="487" height="242" alt="image" src="https://github.com/user-attachments/assets/d54fb7bd-ed16-4c76-8e92-646d3fdc0e31" />
 
-### -- Page
+### You Won Screen
+<img width="469" height="253" alt="image" src="https://github.com/user-attachments/assets/89f01538-e814-401e-9cde-7a101dfc2116" />
+
+### Instructions
+
+### Exit
+<img width="473" height="169" alt="image" src="https://github.com/user-attachments/assets/766d7440-2eec-407d-9497-1242d88a8f97" />
+
+### Pause
+<img width="487" height="193" alt="image" src="https://github.com/user-attachments/assets/f3712c34-1f95-49bf-8632-9fa57b25f53f" />
 
 
 ## Risk Management
