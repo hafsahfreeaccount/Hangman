@@ -149,7 +149,7 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 ### **Basic needs**
 - Core gameplay needs: Clear instructions before gameplay starts and immediate feedback should be given for user actions
-- Security and privacy: The game shouldn't require any personal data to play
+- Security and privacy: The game shouldn't require any personal data to play.
 - Accessibility: All essential interactions must be achievable without advanced technical skills.
 - Reliability: Core features must always function correctly as well as being consistently available with minimal downtime.
 
@@ -158,6 +158,34 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 ## Mock Ups 
 The project includes a set of UI mockups that illustrate the core screens and user flow of the Hangman game. These mockups were constructed to guide the visual layout and core functionality before development began. 
+
+### Home Page Screen
+<img width="368" height="808" alt="Home Pag - Hangman" src="https://github.com/user-attachments/assets/b0f608e5-cfe1-4ed3-a974-d3fe09831d90" />
+
+Purpose: Displays the home page screen for the user to play Hangman.
+Elements:
+- Hangman title
+- Hangman visual
+- Play Now Button
+
+### Loading Screen
+<img width="360" height="800" alt="Landing Screen" src="https://github.com/user-attachments/assets/edfae698-762d-4828-8133-85a57ba586cb" />
+
+Purpose: Loads Hangman intitiailisation before user chooses a difficulty level to play the Hangman page.
+Elements:
+- Hangman title
+- Hangman hanging hook for Hangman
+
+### Difficulty Level Screen
+<img width="360" height="800" alt="Difficulty Level" src="https://github.com/user-attachments/assets/2d76ec30-66d6-4f4c-b9fe-c5f82e7ee8b5" />
+
+Purpose: User chooses one of three difficulty levels from easy, medium and hard.
+- Back arrow button to home page
+- Easy difficulty level button
+- Medium difficulty level button
+- Hard difficulty level button
+
+
 
 ### Gameplay Screen
 <img width="360" height="800" alt="Gameplay Screen" src="https://github.com/user-attachments/assets/8d2fcde2-8103-4c80-9bc7-ec3270413715" />
