@@ -211,6 +211,12 @@ Elements:
 - 'Instructions/help' button
 
 ### You lose screen 
+<img width="357" height="616" alt="image" src="https://github.com/user-attachments/assets/00cd6bb3-70b0-498f-b4af-0cf3b2fe852b" />
+
+Purpose: Tells user that they lost the game and promts the user to play the next game or jump to the end screen
+Elements: 
+- Next game for player 2
+- Points for the round
 
 ### Instructions
 
@@ -238,6 +244,16 @@ Elements:
 - 'Restart' option
 - 'X' button to exit
 - Instructions and Home buttons
+
+### Scoreboard
+<img width="364" height="634" alt="image" src="https://github.com/user-attachments/assets/375bfb99-9d6c-41bb-85a6-0c75367f8c94" />
+
+Purpose: Finalise the scores achieved by each of the players
+Elements:
+- Scores for player 1 and 2
+- New game button (restart)
+- Main menu button in small below the new game button
+
 
 
 ## Storyboards
