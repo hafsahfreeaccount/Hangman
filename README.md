@@ -214,8 +214,8 @@ Elements:
 - Button for player 2 to click in order to start their turn
 - 'Instructions/help' button
 
-### You lose screen 
-<img width="310" height="690" alt="image" src="https://github.com/user-attachments/assets/68929ff0-ad66-4239-845d-cd3c7fbcd36a" />
+### You Lose Screen 
+<img width="360" height="800" alt="lost" src="https://github.com/user-attachments/assets/64a48227-3d3d-47e3-8690-71ebae2b6302" />
 
 
 Purpose: Tells user that they lost the game and promts the user to play the next game or jump to the end screen
