@@ -266,7 +266,16 @@ The project includes storyboards that documents the user experience and the user
 ### You Won Screen
 <img width="469" height="253" alt="image" src="https://github.com/user-attachments/assets/89f01538-e814-401e-9cde-7a101dfc2116" />
 
+### You Lose Screen
+<img width="1126" height="631" alt="image" src="https://github.com/user-attachments/assets/2834a603-09ff-42d3-95c7-22a4a9368173" />
+
+
+
+
 ### Instructions
+
+### Scoreboard 
+<img width="308" height="527" alt="image" src="https://github.com/user-attachments/assets/4791081f-f457-4a61-ae4a-c34846a90e23" />
 
 ### Exit
 <img width="473" height="169" alt="image" src="https://github.com/user-attachments/assets/766d7440-2eec-407d-9497-1242d88a8f97" />
@@ -290,7 +299,7 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
 
 ## Software Development Strategy
 ### Development strategy 
-This project will use the Agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. Considering react
+This project will use the Agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
 ### Core development phases
 #### 1. Initial set up 
 Set up Git repos. 
@@ -318,6 +327,8 @@ Ensure all developers have the same level of coding skills. Use branches for ind
 Create automated tests for core game functions. Manual testing for user interaction and accessibility. 
 ### Post launch maintenance
 Collect and analyse user feedback via surveys. Update features if needed and regular updates based on user feedback. 
+### Potential considerations
+Initially, we were considering using react native to develop a mobile app as it is the recommended method to develop such an app. However, we opted for creating a web app as it is somthing we are all familiar with as a team and found that it makes the development process simpler if all team members are on the same skill level. This reduces errors and means that development time is reduced. 
 
 ## Test Plan 
 
