@@ -275,7 +275,7 @@ The project includes storyboards that documents the user experience and the user
 ### Instructions
 
 ### Scoreboard 
-<img width="308" height="527" alt="image" src="https://github.com/user-attachments/assets/4791081f-f457-4a61-ae4a-c34846a90e23" />
+<img width="1126" height="599" alt="image" src="https://github.com/user-attachments/assets/7b4559bb-2546-4d08-b2ad-4f3be8b5a3ad" />
 
 ### Exit
 <img width="473" height="169" alt="image" src="https://github.com/user-attachments/assets/766d7440-2eec-407d-9497-1242d88a8f97" />
