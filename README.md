@@ -160,8 +160,7 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 <img width="556" height="981" alt="Hangman Gameplay Logic drawio" src="https://github.com/user-attachments/assets/101dd933-4820-4576-b322-fd35630decd9" />
 
 ### Scoreboard Flowchart
-<img width="402" height="797" alt="image" src="https://github.com/user-attachments/assets/1348a3b2-6829-4de6-a02f-adbd954c00f7" />
-
+<img width="281" height="781" alt="Scoreboard Flowchart drawio" src="https://github.com/user-attachments/assets/fdde179a-5acf-44a7-abce-dc9c9730f9de" />
 
 
 ## Mock Ups 
