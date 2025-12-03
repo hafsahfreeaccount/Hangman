@@ -210,6 +210,8 @@ Elements:
 - Button for player 2 to click in order to start their turn
 - 'Instructions/help' button
 
+### You lose screen 
+
 ### Instructions
 
 Purpose: Shows the instructions to the user
@@ -271,7 +273,7 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
 
 ## Software Development Strategy
 ### Development strategy 
-This project will use the Agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
+This project will use the Agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. Considering react
 ### Core development phases
 #### 1. Initial set up 
 Set up Git repos. 
