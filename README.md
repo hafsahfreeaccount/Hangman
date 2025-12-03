@@ -159,6 +159,10 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 ### Gameplay Flowchart
 <img width="556" height="981" alt="Hangman Gameplay Logic drawio" src="https://github.com/user-attachments/assets/101dd933-4820-4576-b322-fd35630decd9" />
 
+### Scoreboard Flowchart
+<img width="402" height="797" alt="image" src="https://github.com/user-attachments/assets/1348a3b2-6829-4de6-a02f-adbd954c00f7" />
+
+
 
 ## Mock Ups 
 The project includes a set of UI mockups that illustrate the core screens and user flow of the Hangman game. These mockups were constructed to guide the visual layout and core functionality before development began. 
