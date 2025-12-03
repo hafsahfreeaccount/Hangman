@@ -215,8 +215,7 @@ Elements:
 - 'Instructions/help' button
 
 ### You Lose Screen 
-<img width="360" height="800" alt="lost" src="https://github.com/user-attachments/assets/64a48227-3d3d-47e3-8690-71ebae2b6302" />
-
+<img width="360" height="800" alt="lost" src="https://github.com/user-attachments/assets/dea58eef-0681-4b54-a9bf-57923d1d5a99" />
 
 Purpose: Tells user that they lost the game and promts the user to play the next game or jump to the end screen
 Elements: 
