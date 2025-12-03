@@ -153,7 +153,11 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 - Accessibility: All essential interactions must be achievable without advanced technical skills.
 - Reliability: Core features must always function correctly as well as being consistently available with minimal downtime.
 
+
 ## Initial Flowcharts
+
+### Gameplay Flowchart
+<img width="556" height="981" alt="Hangman Gameplay Logic drawio" src="https://github.com/user-attachments/assets/101dd933-4820-4576-b322-fd35630decd9" />
 
 
 ## Mock Ups 
