@@ -156,6 +156,12 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 ## Initial Flowcharts
 
+
+### Homepage Flowchart
+<img width="1376" height="1731" alt="Hangman drawio" src="https://github.com/user-attachments/assets/92083403-b0e9-4b06-b6cb-733b493e114a" />
+
+
+
 ### Gameplay Flowchart
 <img width="556" height="981" alt="Hangman Gameplay Logic drawio" src="https://github.com/user-attachments/assets/101dd933-4820-4576-b322-fd35630decd9" />
 
@@ -167,7 +173,8 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 The project includes a set of UI mockups that illustrate the core screens and user flow of the Hangman game. These mockups were constructed to guide the visual layout and core functionality before development began. 
 
 ### Home Page Screen
-<img width="392" height="800" alt="Frame 93 (1)" src="https://github.com/user-attachments/assets/692c28a1-1cbd-4d3d-a08e-04e677fe1c15" />
+<img width="392" height="800" alt="Home Page" src="https://github.com/user-attachments/assets/3fedb66b-4f9e-4c36-a7eb-38692c189d6b" />
+
 
 Purpose: Displays the home page screen for the user to play Hangman.
 Elements:
@@ -176,7 +183,8 @@ Elements:
 - Play Now Button
 
 ### Loading Screen
-<img width="360" height="800" alt="Landing Screen (1)" src="https://github.com/user-attachments/assets/649ded11-bdd4-4f1d-9a2e-754de09f0eab" />
+<<img width="360" height="800" alt="Landing Screen (2)" src="https://github.com/user-attachments/assets/3a33f942-9f8f-43f0-9e78-b2cac5dc07ea" />
+
 
 Purpose: Loads Hangman intitiailisation before user chooses a difficulty level to play the Hangman page.
 Elements:
@@ -184,10 +192,10 @@ Elements:
 - Hangman hanging hook for Hangman
 
 ### Difficulty Level Screen
-<img width="360" height="800" alt="Difficulty Level (4)" src="https://github.com/user-attachments/assets/1b6a7e43-896c-4300-88cd-9f4c7b51cb09" />
+<img width="360" height="800" alt="Difficulty Level (5)" src="https://github.com/user-attachments/assets/a5527ba1-69e4-4b49-b67a-423ad3fcf9ea" />
 
 Purpose: User chooses one of three difficulty levels from easy, medium and hard.
-- Back arrow button to home page
+- Back button to return to the home page
 - Easy difficulty level button
 - Medium difficulty level button
 - Hard difficulty level button
@@ -226,6 +234,8 @@ Elements:
 - Points for the round
 
 ### Instructions
+<img width="324" height="627" alt="Instructions" src="https://github.com/user-attachments/assets/7edf87b8-1dd0-4459-8b61-d599387e982f" />
+
 
 Purpose: Shows the instructions to the user
 Elements:
