@@ -82,6 +82,15 @@ Functionality:
 - Clear navigation to read rules and instructions before gameplay begins.
 - Minimal steps to ensure a smooth and intuitive user experience.
 
+
+### Difficulty Level Selection
+Purpose: Allow users to pick a level with guessing words in increasing difficulty out of 3 levels.
+
+Fumctionality:
+- Back button to return to the homepage.
+- 3 difficulty levels connect to the gameplay functionality.
+- Fixed numbers of lives applied for each difficulty level.
+  
 #### Letter Selection logic
 Purpose: Allows correct letter guesses to appear green and fill in the corresponding gaps in the word.
 
@@ -276,6 +285,18 @@ Elements:
 ## Storyboards
 The project includes storyboards that documents the user experience and the user flow of the Hangman game.
 
+### Home Page Screen
+<img width="701" height="756" alt="Hangman Home Page Storyboard drawio" src="https://github.com/user-attachments/assets/449728bb-fa50-476c-bd7e-6a317201a162" />
+
+### Landing Page Screen
+<img width="557" height="800" alt="Hangman Landing Page Storyboard drawio" src="https://github.com/user-attachments/assets/5b0ffcd0-8a66-44d6-b66f-a699db7ed49b" />
+
+### Difficulty Level Screen
+<img width="741" height="800" alt="Hangman Difficulty Level Storyboard  drawio" src="https://github.com/user-attachments/assets/509a1ee6-0d72-4dc3-9dd7-a8481f04280c" />
+
+
+
+
 ### Gameplay Screen
 <img width="487" height="242" alt="image" src="https://github.com/user-attachments/assets/d54fb7bd-ed16-4c76-8e92-646d3fdc0e31" />
 
@@ -289,6 +310,8 @@ The project includes storyboards that documents the user experience and the user
 
 
 ### Instructions
+<img width="781" height="627" alt="Instructions Storyboard drawio" src="https://github.com/user-attachments/assets/f94ad6c5-c451-4061-8623-5f94ff1d16dd" />
+
 
 ### Scoreboard 
 <img width="1126" height="599" alt="image" src="https://github.com/user-attachments/assets/7b4559bb-2546-4d08-b2ad-4f3be8b5a3ad" />
