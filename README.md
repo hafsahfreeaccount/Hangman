@@ -173,7 +173,9 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 # Pseudocode
 
-//Start Open homepage Wait for user to respond
+//Start 
+Open homepage
+Wait for user to respond
 IF user presses ‘Play’ THEN 
    Load loading screen 
    Pause for 2 seconds 
