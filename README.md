@@ -167,8 +167,117 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 
 ### Homepage Flowchart
-<img width="1376" height="1731" alt="Hangman drawio" src="https://github.com/user-attachments/assets/92083403-b0e9-4b06-b6cb-733b493e114a" />
 
+
+<img width="1611" height="1731" alt="Hangman drawio (1)" src="https://github.com/user-attachments/assets/57f6bc53-c8d3-40a2-8a65-01faa4218c9c" />
+
+# Pseudocode
+
+//Start Open homepage Wait for user to respond
+IF user presses ‘Play’ THEN 
+   Load loading screen 
+   Pause for 2 seconds 
+   Switch to difficulty level screen 
+      ENDIF 
+
+//Difficulty Level Page
+   Present easy, medium, hard options 
+   Wait for user to choose difficulty level of choice
+
+   IF user picks ‘Easy’ THEN 
+   Assign lives to 15 
+   Assign difficulty as easy 
+   Load easy gameplay 
+      ENDIF 
+      
+IF user picks ‘Medium’ THEN 
+Assign lives as 12 
+Assign difficulty as medium 
+Load medium gameplay 
+   ENDIF 
+
+IF user picks ‘Hard’ THEN 
+Assign lives as 9 
+Assign difficulty as hard 
+Load hard gameplay 
+   ENDIF 
+
+//Pause Menu and Help icon lies within the Gameplay Screen 
+IF user clicks Pause THEN 
+   Navigate user to pause menu 
+   Show user pause menu options 
+   Pause until user chooses an option 
+
+IF user picks 'Resume' THEN 
+   Hide pause menu from view 
+   Navigate back to gameplay 
+      ENDIF 
+IF user picks 'Restart' THEN 
+   Reboot lives for set difficulty
+   Reboot word and score for new round 
+   Return to gameplay
+      ENDIF 
+IF user picks 'Help' THEN 
+   Open Instructions screen 
+   Pause until user clicks 'Exit' or 'Back' 
+   Remove Instructions screen from view 
+   Return to pause menu 
+      ENDIF 
+   IF user clicks 'Home' THEN 
+Open exit overlay 
+   IF user clicks 'Yes' THEN
+   Hide gameplay screen from user view 
+   Present homepage to user
+   ELSE 
+Return user view to gameplay 
+      ENDIF 
+ENDIF 
+ENDIF 
+
+//High-level summary of gameplay handled by Rushda, random word generation handled by Hafsah 
+
+IF all letters guessed before lives go to zero THEN 
+   Result = 'win' 
+   ELSE Result = 'lose' 
+   ENDIF 
+
+   Work out current round score on difficulty and unused lives 
+   CALL currentroundpoints (difficulty, lives_left) RETURNING currentroundpoints 
+
+   Change score for current player currentplayerpoints = currentplayerpoints + currentroundpoints // This updates player 1’s total score
+
+   Wait for player 1 to change over 
+IF player 1 clicks ‘Player 2’s Turn’ THEN 
+   Reboot lives 
+   Reboot word for current difficulty 
+   Switch to player 2 
+   Load gameplay screen for player 2
+      ENDIF 
+
+   Player 2 guesses letters 
+      IF all letters guessed or lives = 0 THEN 
+         end current round 
+      CALL currentroundpoints (difficulty, lives_left) //calls currentroundpoint calculations 
+      Change score for current player //This updates player 2’s score 
+      currentplayerpoints = currentplayerpoints + currentroundpoints 
+         ENDIF 
+
+// High- Level summary of scoreboard handled by Hafsah 
+Display Scoreboard Screen
+Load player 1 points: [p1points] 
+Load player 2 points: [p2points] 
+Display 'New Game' 
+Display 'Main Menu' 
+
+Wait for user choice 
+
+IF user clicks ‘New Game’ THEN 
+   Reboot all points to zero 
+   Produce Difficulty Level Screen 
+      ENDIF 
+IF user clicks ‘Main Menu’ THEN 
+   Open homepage 
+      ENDIF
 
 
 ### Gameplay Flowchart
