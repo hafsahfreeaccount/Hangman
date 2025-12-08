@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: FCF5EE;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto; 
+  padding: 20px;
+  text-align: center;
+}
+
+#word {
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+
+#keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.key {
+  width: 12%;
+  margin: 3px;
+  padding: 10px;
+  background: FCF5EE;
+  colour: black;
+  border-radius: 5px;
+  font-size: 25px;
+  user-select: none;
+}
+
+.key:active {
+  background: black;
+}
+
+#scoreboards {
+  background: FCF5EE;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px;
+  font-size: 5vw;
+}
+
+#scoreboard h2 {
+  margin-bottom: 10px;
+  font-size: 6vw;
+}
