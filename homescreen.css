@@ -1,0 +1,37 @@
+/* Base code for background */
+body {
+  margin: 0;
+  padding: 0;
+  background: #FCF5EE;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: #FCF5EE;
+  border: 6px solid #FFC4C4;
+  box-sizing: border-box;
+}
+
+/* Title image */
+.title-image {
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Play Now button image */
+.play-button {
+  display: block;
+  margin: 70px auto 0 auto;
+  width: 55%;
+  max-width: 220px;
+  cursor: pointer;          /* makes it feel clickable */
+}

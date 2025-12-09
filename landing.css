@@ -1,0 +1,36 @@
+/* Base code for background */
+body {
+  margin: 0;
+  padding: 0;
+  background: #FCF5EE;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: #FCF5EE;
+  border: 6px solid #FFC4C4;
+  box-sizing: border-box;
+}
+
+/* Title Image */
+.title-image {
+  display: block;
+  margin: 80px auto 10px auto;
+  width: 70%;
+  max-width: 250px;
+}
+
+/* Hang Logo (below title) */
+.hang-logo {
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 80%;
+  max-width: 280px;
+}
