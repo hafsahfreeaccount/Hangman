@@ -183,40 +183,41 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 ## Homepage/Landing Page Pseudocode
 
-//Start 
+//Start on the homepage where the user kicks off the game.
+// Homepage loads first and pauses for player action
 Open homepage
 Wait for user to respond
 IF user presses ‘Play’ THEN 
-   Load loading screen 
-   Pause for 2 seconds 
-   Switch to difficulty level screen 
+   Load loading screen // short transition before the game starts
+   Pause for 2 seconds // brief delay to view the loading screen
+   Switch to difficulty level screen //switch to the difficulty page
       ENDIF 
 
 ## Difficulty Level Pseudocode
-//Difficulty Level Page
+//The player decides which level they want to play on (this automatically set lives for both players).
    Present easy, medium, hard options 
    Wait for user to choose difficulty level of choice
 
    IF user picks ‘Easy’ THEN 
-   Assign lives to 15 
+   Assign lives to 15  // easiest mode receives the most lives/custom lives for each level
    Assign difficulty as easy 
-   Load easy gameplay 
+   Load easy gameplay  // goes right into the gameplay screen
       ENDIF 
       
 IF user picks ‘Medium’ THEN 
-Assign lives as 12 
+Assign lives to 12 // moderate difficulty level 
 Assign difficulty as medium 
 Load medium gameplay 
    ENDIF 
 
 IF user picks ‘Hard’ THEN 
-Assign lives as 9 
+Assign lives to 9          // hardest lives has the least lives
 Assign difficulty as hard 
 Load hard gameplay 
    ENDIF 
 
 ## Pause Menu Pseudocode
-//Pause Menu and Help icon lies within the Gameplay Screen 
+//Pause Menu allows the user to step away or step back from the game at any point.
 IF user clicks Pause THEN 
    Navigate user to pause menu 
    Show user pause menu options 
@@ -224,47 +225,57 @@ IF user clicks Pause THEN
 
 IF user picks 'Resume' THEN 
    Hide pause menu from view 
-   Navigate back to gameplay 
+   Navigate back to gameplay  // return to game exactly where they left off.
       ENDIF 
+      
 IF user picks 'Restart' THEN 
-   Reboot lives for set difficulty
+   Reboot correctGuessCounter  //refresh guess history for new round
+   Reboot wrongGuessCounter
+   Reboot lives for set difficulty  //the player starts with full lives to start off with
    Reboot word and score for new round 
-   Return to gameplay
+   Return to gameplay //restart the game for a new round
       ENDIF 
-IF user picks 'Help' THEN 
-   Open Instructions screen 
+      
+IF user picks 'Help' THEN  //in-game instructions overlay 
+   Open Instructions screen  //show game rules/instructions for player to read
    Pause until user clicks 'Exit' or 'Back' 
    Remove Instructions screen from view 
-   Return to pause menu 
+   Return to pause menu //return to menu options
       ENDIF 
-   IF user clicks 'Home' THEN 
-Open exit overlay 
+      
+   IF user clicks 'Home' THEN  //exit game confirmation popup
+   Open exit overlay //ask if the user wants to quit or continue playing
    IF user clicks 'Yes' THEN
    Hide gameplay screen from user view 
-   Present homepage to user
+   Present homepage to user  //ends the game and return to start 
    ELSE 
-Return user view to gameplay 
+Return user view to gameplay //cancel quit
       ENDIF 
 ENDIF 
 ENDIF 
 
 ## Gameplay Summary Pseudocode
-//High-level summary of gameplay handled by Rushda, random word generation handled by Hafsah 
+//Handles win/lose checking, scoring and turn taking between both players.
 
+WHILE game is running DO
+//Checks if the player completed the word before running out of lives. 
 IF all letters guessed before lives go to zero THEN 
    Result = 'win' 
    ELSE Result = 'lose' 
-   ENDIF 
-
-   Work out current round score on difficulty and unused lives 
-   CALL currentroundpoints (difficulty, lives_left) RETURNING currentroundpoints 
+      ENDIF 
+//Calculate current round points based on difficulty and lives remaining left over from player's gameplay.
+   CALL currentroundpoints (difficulty, lives_remaining) RETURNING currentroundpoints 
 
    Change score for current player currentplayerpoints = currentplayerpoints + currentroundpoints // This updates player 1’s total score*
-
-   Wait for player 1 to change over 
+//Waits for player 1 to confirm Player 2's Turn before switching players.
+   Wait for player 1 to change over
+   
 IF player 1 clicks ‘Player 2’s Turn’ THEN 
+    Reboot correctGuessCounter
+    Reboot wrongGuessCounter
    Reboot lives 
    Reboot word for current difficulty 
+
    Switch to player 2 
    Load gameplay screen for player 2
       ENDIF 
@@ -272,14 +283,14 @@ IF player 1 clicks ‘Player 2’s Turn’ THEN
    Player 2 guesses letters 
       IF all letters guessed or lives = 0 THEN 
          end current round 
-      CALL currentroundpoints (difficulty, lives_left) //calls currentroundpoint calculations 
+      CALL currentroundpoints (difficulty, lives_remaining) //calls currentroundpoint calculations 
       Change score for current player //This updates player 2’s score 
       currentplayerpoints = currentplayerpoints + currentroundpoints 
          ENDIF 
-
+ENDWHILE
 
 ## Scoreboard Pseudocode 
-// High-level summary of scoreboard 
+// Final scores are displayed after both players end their rounds 
 Display Scoreboard Screen
 Load player 1 points: [p1points] 
 Load player 2 points: [p2points] 
@@ -289,11 +300,11 @@ Display 'Main Menu'
 Wait for user choice 
 
 IF user clicks ‘New Game’ THEN 
-   Reboot all points to zero 
-   Produce Difficulty Level Screen 
+   Reboot all points to zero // reboots game scores for both players
+   Produce Difficulty Level Screen //start a new game round 
       ENDIF 
 IF user clicks ‘Main Menu’ THEN 
-   Open homepage 
+   Open homepage //return to the home page
       ENDIF
 
 ## Mock Ups 
