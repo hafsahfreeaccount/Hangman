@@ -491,7 +491,7 @@ Initially, we were considering using react native to develop a mobile app as it 
 
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
-|1.1|Launch the game website|Open game URL in browser|Main menu loads with play button, difficulty dropdown, and icons| | |
+|1.1|Launch the game website|Open game URL in browser|Main menu loads with play button|<img width="299" height="414" alt="image" src="https://github.com/user-attachments/assets/0326b3d6-41ac-47ea-9554-e51e6ba8aed2" /> Main menu loads with play button|n/a|
 |1.2|Start a game|Click play button|Difficulty levels are shown for user to choose| | |
 |1.3|Choose a difficulty level|Click easy, medium or hard|Player 1 gameplay screen appears with masked word and keyboard| | |
 |1.4|Player 1 guesses a correct letter|Player 1 taps a correct letter on the on-screen alphabet|Correct letter appears in the word; button turns green| | |
