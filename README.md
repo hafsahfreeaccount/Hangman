@@ -171,7 +171,7 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 <img width="1611" height="1731" alt="Hangman drawio (1)" src="https://github.com/user-attachments/assets/57f6bc53-c8d3-40a2-8a65-01faa4218c9c" />
 
-# Pseudocode
+# Homepage/Navigation Pseudocode
 
 //Start 
 Open homepage
@@ -246,7 +246,7 @@ IF all letters guessed before lives go to zero THEN
    Work out current round score on difficulty and unused lives 
    CALL currentroundpoints (difficulty, lives_left) RETURNING currentroundpoints 
 
-   Change score for current player currentplayerpoints = currentplayerpoints + currentroundpoints // This updates player 1’s total score
+   Change score for current player currentplayerpoints = currentplayerpoints + currentroundpoints // This updates player 1’s total score*
 
    Wait for player 1 to change over 
 IF player 1 clicks ‘Player 2’s Turn’ THEN 
@@ -306,7 +306,7 @@ Elements:
 <<img width="360" height="800" alt="Landing Screen (2)" src="https://github.com/user-attachments/assets/3a33f942-9f8f-43f0-9e78-b2cac5dc07ea" />
 
 
-Purpose: Loads Hangman intitiailisation before user chooses a difficulty level to play the Hangman page.
+Purpose: Loads Hangman title before transitioning user to choose a difficulty level to start the game. 
 Elements:
 - Hangman title
 - Hangman hanging hook for Hangman
@@ -507,7 +507,7 @@ Initially, we were considering using react native to develop a mobile app as it 
 
 ## Individual Contributions
 Rushda -
-Khadijah -
+Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart created home page and high-level navigation pseudocode and coded instructions, exit and pause menu and points for You Win, You Lose and scoreboard scoring screens. 
 Hafsah -
 
 ## Success of Project
