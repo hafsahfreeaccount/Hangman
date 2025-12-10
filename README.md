@@ -491,8 +491,9 @@ Initially, we were considering using react native to develop a mobile app as it 
 
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
-|1.1|Launch the game website|Open game URL in browser|Main menu loads with play button|<img width="299" height="414" alt="image" src="https://github.com/user-attachments/assets/0326b3d6-41ac-47ea-9554-e51e6ba8aed2" /> Main menu loads with play button|n/a|
-|1.2|Start a game|Click play button|Difficulty levels are shown for user to choose| | |
+|1.1|Launch the game website|Open game URL in browser|Main menu loads with play button|Main menu loads with play button <img width="299" height="414" alt="image" src="https://github.com/user-attachments/assets/0326b3d6-41ac-47ea-9554-e51e6ba8aed2" />|n/a|
+|1.2|Start a game|Click play button|Landing screen loads for 2 seconds|Button was not working when pressed (Was not being directed to landing screen)|I had not given the playbutton an ID so the javascript was not being implemented. ID was added to change this <img width="937" height="616" alt="Screenshot 2025-12-09 201047" src="https://github.com/user-attachments/assets/ad49692d-c5be-4aab-855d-9b4d0c23b492" />|
+|**1.2 (Retest)**|Start a game|Click play button|Landing screen loads for 2 seconds|Landing screen loads for 2 seconds <img width="297" height="413" alt="image" src="https://github.com/user-attachments/assets/a734cc4b-1d5f-42b5-ab91-c47e0052879c" />|n/a|
 |1.3|Choose a difficulty level|Click easy, medium or hard|Player 1 gameplay screen appears with masked word and keyboard| | |
 |1.4|Player 1 guesses a correct letter|Player 1 taps a correct letter on the on-screen alphabet|Correct letter appears in the word; button turns green| | |
 |1.5|Player 1 guesses an incorrect letter|Player 1 taps a wrong letter|Letter turns red; rope/hangman progresses| | |
