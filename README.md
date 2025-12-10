@@ -171,7 +171,17 @@ The games aesthetic will consist of a minimal and calm aesthetic with simple and
 
 <img width="1611" height="1731" alt="Hangman drawio (1)" src="https://github.com/user-attachments/assets/57f6bc53-c8d3-40a2-8a65-01faa4218c9c" />
 
-# Pseudocode
+### Gameplay Flowchart
+<img width="556" height="981" alt="Hangman Gameplay Logic drawio" src="https://github.com/user-attachments/assets/101dd933-4820-4576-b322-fd35630decd9" />
+
+### Scoreboard Flowchart
+<img width="281" height="781" alt="Scoreboard Flowchart drawio" src="https://github.com/user-attachments/assets/fdde179a-5acf-44a7-abce-dc9c9730f9de" />
+
+### Pseudocode
+
+### Homepage Pseudocode
+
+## Homepage/Landing Page Pseudocode
 
 //Start 
 Open homepage
@@ -182,6 +192,7 @@ IF user presses ‘Play’ THEN
    Switch to difficulty level screen 
       ENDIF 
 
+## Difficulty Level Pseudocode
 //Difficulty Level Page
    Present easy, medium, hard options 
    Wait for user to choose difficulty level of choice
@@ -204,6 +215,7 @@ Assign difficulty as hard
 Load hard gameplay 
    ENDIF 
 
+## Pause Menu Pseudocode
 //Pause Menu and Help icon lies within the Gameplay Screen 
 IF user clicks Pause THEN 
    Navigate user to pause menu 
@@ -236,6 +248,7 @@ Return user view to gameplay
 ENDIF 
 ENDIF 
 
+## Gameplay Summary Pseudocode
 //High-level summary of gameplay handled by Rushda, random word generation handled by Hafsah 
 
 IF all letters guessed before lives go to zero THEN 
@@ -246,7 +259,7 @@ IF all letters guessed before lives go to zero THEN
    Work out current round score on difficulty and unused lives 
    CALL currentroundpoints (difficulty, lives_left) RETURNING currentroundpoints 
 
-   Change score for current player currentplayerpoints = currentplayerpoints + currentroundpoints // This updates player 1’s total score
+   Change score for current player currentplayerpoints = currentplayerpoints + currentroundpoints // This updates player 1’s total score*
 
    Wait for player 1 to change over 
 IF player 1 clicks ‘Player 2’s Turn’ THEN 
@@ -264,7 +277,9 @@ IF player 1 clicks ‘Player 2’s Turn’ THEN
       currentplayerpoints = currentplayerpoints + currentroundpoints 
          ENDIF 
 
-// High- Level summary of scoreboard handled by Hafsah 
+
+## Scoreboard Pseudocode 
+// High-level summary of scoreboard 
 Display Scoreboard Screen
 Load player 1 points: [p1points] 
 Load player 2 points: [p2points] 
@@ -280,14 +295,6 @@ IF user clicks ‘New Game’ THEN
 IF user clicks ‘Main Menu’ THEN 
    Open homepage 
       ENDIF
-
-
-### Gameplay Flowchart
-<img width="556" height="981" alt="Hangman Gameplay Logic drawio" src="https://github.com/user-attachments/assets/101dd933-4820-4576-b322-fd35630decd9" />
-
-### Scoreboard Flowchart
-<img width="281" height="781" alt="Scoreboard Flowchart drawio" src="https://github.com/user-attachments/assets/fdde179a-5acf-44a7-abce-dc9c9730f9de" />
-
 
 ## Mock Ups 
 The project includes a set of UI mockups that illustrate the core screens and user flow of the Hangman game. These mockups were constructed to guide the visual layout and core functionality before development began. 
@@ -306,7 +313,7 @@ Elements:
 <<img width="360" height="800" alt="Landing Screen (2)" src="https://github.com/user-attachments/assets/3a33f942-9f8f-43f0-9e78-b2cac5dc07ea" />
 
 
-Purpose: Loads Hangman intitiailisation before user chooses a difficulty level to play the Hangman page.
+Purpose: Loads Hangman title before transitioning user to choose a difficulty level to start the game. 
 Elements:
 - Hangman title
 - Hangman hanging hook for Hangman
@@ -507,7 +514,7 @@ Initially, we were considering using react native to develop a mobile app as it 
 
 ## Individual Contributions
 Rushda -
-Khadijah -
+Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart, created home page, difficulty level, summarised gameplay and scoreboard pseudocode and coded instructions, exit and pause menu and points for scoreboard scoring screens. 
 Hafsah -
 
 ## Success of Project
