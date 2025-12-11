@@ -16,6 +16,18 @@ body {
   height: 100vh;
   background: #FCF5EE;
   border: 6px solid #FFC4C4;
-  box-sizing: border-box;
-  
+  box-sizing: border-box; 
+}
+
+h1 {
+  font-family: 'Fredoka';
+  color: #540863;
+  font-size: 64px;
+  text-align: center;
+}
+
+p {
+  font-family: 'rochester', cursive;
+  font-size: 30px;
+  color: #EE6983;
 }
