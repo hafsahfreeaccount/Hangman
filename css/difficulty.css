@@ -39,8 +39,8 @@ p {
     position: absolute;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #91C4C3;
-    color: white;
+    background-color: #FFC4C4;
+    color: #540863;
     border: none;
     border-radius: 8px;
     padding: 10px 10px;
@@ -52,8 +52,8 @@ p {
     width: 200px;
     padding: 12px 0;
     font-size: 18px;
-    background-color: #91C4C3;
-    color: white;
+    background-color: #FFC4C4;
+    color: #540863;
     border: none;
     border-radius: 8px;
     transition: transform 0.2s, background-color 0.2s;
@@ -62,14 +62,14 @@ p {
 
 /* Hover effect */
 .d-button:hover {
-  background-color: #b8d4e3;         /* hover color */
+  background-color: #ce6262;         /* hover color */
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 /* Click (active) effect */
 .d-button:active {
-  background-color: #9bbdd2;         /* click color */
+  background-color: #f15151;         /* click color */
   transform: translateY(1px) scale(0.98);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
