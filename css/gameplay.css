@@ -1,0 +1,20 @@
+/* Base code for background */
+body {
+  margin: 0;
+  padding: 0;
+  background: #8D7D7D;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: #FCF5EE;
+  border: 6px solid #FFC4C4;
+  box-sizing: border-box;
+}
