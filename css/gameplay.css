@@ -47,3 +47,108 @@ body {
   transform: scale(1.08);
   opacity: 0.85;
 }
+
+
+/* Pause Overlay */
+.pause-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+/* Popup Container */
+.pause-popup {
+  background: #fff3eb;
+  border-radius: 25px;
+  width: 85%;
+  max-width: 300px;
+  padding: 25px 20px 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  text-align: center;
+  border: 2px solid #92487A;
+}
+
+/* Main buttons */
+.pause-action {
+  display: block;
+  width: 80%;
+  max-width: 190px;
+  margin: 20px auto 10px auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.pause-action:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Bottom icons row */
+.pause-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.icon-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.12);
+  opacity: 0.85;
+}
+
+
+/* Pause bar */
+.pause-header {
+  background: linear-gradient(to right, #92487A, #f3a0b2, #92487A);
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 18px 0;
+  margin: -25px -20px 20px; 
+  border-radius: 25px 25px 18px 18px;
+  position: relative;
+}
+
+/* Close (X) */
+.pause-close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.pause-btn {
+  width: 60%;
+  padding: 8px;
+  margin: 8px auto;
+  border-radius: 22px;
+  font-size: 17px;
+  border: none;
+  font-weight: bold;
+  background: #f1a3b5;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.pause-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
