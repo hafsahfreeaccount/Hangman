@@ -17,4 +17,33 @@ body {
   background: #FCF5EE;
   border: 6px solid #FFC4C4;
   box-sizing: border-box;
+  position: relative;
+}
+
+/* Instructions Button */
+.instructions-button {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.instructions-button:hover {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+
+/* Pause Button */
+.pause-button {
+  position: absolute;
+  top: 60px;
+  right: 12px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.pause-button:hover {
+  transform: scale(1.08);
+  opacity: 0.85;
 }
