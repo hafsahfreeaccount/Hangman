@@ -1,0 +1,74 @@
+/* Base code for background */
+body {
+  margin: 0;
+  padding: 0;
+  background: #8D7D7D;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: #FCF5EE;
+  border: 6px solid #FFC4C4;
+  box-sizing: border-box;
+}
+
+/* Instructions Button */
+.instructions-button {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.instructions-button:hover {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+
+
+/* Sad Hangman Image */
+.sad-hangman {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85px;
+}
+
+/* Pause bar */
+.lose-header {
+  background: linear-gradient(to right, #92487A, #f3a0b2, #92487A);
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 18px 0;
+  margin: -25px -20px 20px; 
+  border-radius: 25px 25px 18px 18px;
+  position: relative;
+}
+
+/* Popup Container */
+.lose-popup {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+
+  background: #92487A;
+  border-radius: 25px;
+  width: 85%;
+  max-width: 300px;
+  padding: 25px 20px 155px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  text-align: center;
+  border: 2px solid #92487A;
+}
