@@ -1,14 +1,17 @@
 let currentPlayer = localStotage.getItem("currentPlayer");
 
-const nextBtn = document.getElementById("nextBtn");
-const nextBtn = document.getElementById("nextBtn");
-
-// Save current player during gameplay
-let currentPlayer = localStorage.getItem("currentPlayer");
-
-if (!currentPlayer) {
+if (currentPlayer) {
     currentPLayer =  "1";
-    locaStorage.setItem("currentPlayer", "!");
+    locaStorage.setItem("currentPlayer", "1");
+
+const nextBtn = document.getElementById ("nextBtn");
+const scoreDisplay = document.getElementById ("scoreValue");
+    
+ if (currentPlayer == "1") {
+scoreDisplay.textContent = localStorage.getItem ("player1Score"); 
+    } else {
+        scoreDisplay.textContent = localStorage.getItem("player2Score");
+    }
 
     
 if  (nextBtn) {
@@ -24,13 +27,6 @@ if  (nextBtn) {
     });
 }
     
-const scoreDisplay = document.getElementById ("scoreValue");
-const currentPlayer = localStorage.getItem("currentPlayer");
-
-    if (currentPlayer == "1") {
-scoreDisplay.textContent = localStorage.getItem ("player1Score"); 
-    } else {
-        scoreDisplay.textContent = localStoragge.getItem("player2Score");
-    }
+}
 
 
