@@ -1,3 +1,29 @@
+const difficulty = localStorage.getItem("difficulty");
+
+if (!difficulty) {
+  // Failsafe: force player to choose difficulty
+  window.location.href = "difficulty.html";
+}
+
+let maxGuesses;
+
+switch (difficulty) {
+  case "easy":
+    maxGuesses = 10;
+    break;
+  case "hard":
+    maxGuesses = 6;
+    break;
+  default:
+    maxGuesses = 10;
+}
+
+
+
+
+
+
+
 // Opens overlays
 const instructionsBtn = document.getElementById("instructionsBtn");
 const pauseBtn = document.getElementById("pauseBtn");
@@ -96,3 +122,29 @@ if (exitYesBtn) {
     window.location.href = "homescreen.html";
   });
 }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const difficulty = localStorage.getItem("difficulty");
+
+  // Force difficulty selection
+  if (!difficulty) {
+    window.location.href = "difficulty.html";
+    return;
+  }
+
+ 
+
+  // UI
+  document.getElementById("difficultyText").innerText =
+    `Difficulty: ${difficulty.toUpperCase()}`;
+
+
+
+  // Restart button
+  document.getElementById("restartBtn").addEventListener("click", () => {
+    localStorage.removeItem("difficulty");
+    window.location.href = "difficulty.html";
+  });
+});
