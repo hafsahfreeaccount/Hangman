@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 100%;
   max-width: 400px;
   height: 100vh;
@@ -119,7 +120,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease, background 0.15s ease;
+  transition: transform 0.15s ease,
 }
 
 .icon-btn:hover {
@@ -166,7 +167,6 @@ body {
 .pause-btn:hover {
   transform: scale(1.05);
   opacity: 0.9;
-
 }
 
 .game-box .word-display {
