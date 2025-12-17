@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hangman</title>
     <link rel="stylesheet" href="css/gameplay.css" />
+    <link rel="stylesheet" href="css/overlays.css"/>
 </head>
 
 <body>
@@ -27,94 +28,98 @@
             </ul>
        </div>
       
-<!-- Instructions Overlay -->
-<div id="instructionsOverlay" class="overlay">
-  <div class="modal">
+    <img 
+      src="images/Instructions Button.png"
+      alt="Instructions Button"
+      class="instructions-button"
+      id="instructionsBtn"
+    />
 
-    <div class="instructions-header">
-      <h1>INSTRUCTIONS</h1>
-      <button class="closeBtn" id="closeInstructions">X</button>
+    <!-- Pause Button -->
+    <img
+      src="images/Pause Button.png"
+      alt="Pause Button"
+      class="pause-button"
+      id="pauseBtn"
+    />
+
+    <!-- ========== INSTRUCTIONS OVERLAY ========== -->
+    <div id="instructionsOverlay" class="overlay">
+      <div class="modal">
+
+        <div class="instructions-header">
+          <h1>INSTRUCTIONS</h1>
+          <button class="closeBtn" id="closeInstructions">X</button>
+        </div>
+
+        <h2>How To Play</h2>
+        <ol>
+          <li><img src="images/Play Now Button.png" class="icon"> Play</li>
+          <li>Pick level: Easy (15 lives) | Medium (12) | Hard (9).</li>
+          <li>Tap letters to guess:
+            <ul>
+              <li>Correct = points</li>
+              <li>Wrong = lose lives & points</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>Two Player Mode</h2>
+        <p>Player 1 → Player 2 → Scoreboard</p>
+
+        <h2>Controls</h2>
+        <p>
+          <img src="images/Instructions Button.png" class="icon"> Help |
+          <img src="images/Pause Button.png" class="icon"> Pause |
+          <img src="images/Home Button.png" class="icon"> Home
+        </p>
+
+      </div>
     </div>
 
-    <h2>How To Play</h2>
-    <ol>
-      <li><img src="Play Now.png" alt="play" class="icon"> Play</li>
-      <li>Pick level: Easy (15 lives) | Medium (12) | Hard (9)</li>
-      <li>Tap letters to guess:
-        <ul>
-          <li>Correct = points</li>
-          <li>Wrong = lose lives & points</li>
-        </ul>
-      </li>
-    </ol>
+    <!-- ========== PAUSE OVERLAY ========== -->
+    <div id="pauseOverlay" class="pause-overlay">
 
-    <h2>Two Player Mode</h2>
-    <p>Player 1's score → Player 2's turn</p>
-    <p>Next → Scoreboard</p>
+      <div class="pause-popup">
 
-    <h2>Controls</h2>
-    <p>
-      <img src="images/Instructions Button.png" class="icon"> Help |
-      <img src="images/Pause Button.png" class="icon"> Pause |
-      <img src="images/Home Button.png" class="icon"> Home
-    </p>
-
-  </div>
-</div>
-        <!-- Pause Button -->
-         <img src="images/Pause Button.png" alt="Pause Button" class="pause-button" id="pauseBtn" />
-
-        
-        <!-- Pause Overlay -->
-        <div class="pause-overlay" id="pauseOverlay">
-
-        <!-- Pause Popup -->
-        <div class="pause-popup">
-
-        <!-- Header -->
         <div class="pause-header">
-        <span>PAUSE</span>
-
-        <!-- Close (X) Button -->
-        <img src="images/Close Button.png" class="pause-close" id="closePauseBtn" />
+          <span>PAUSE</span>
+          <img src="images/Close Button.png" class="pause-close" id="closePauseBtn"/>
         </div>
 
-        <!-- Resume Button -->
-        <img src="images/Resume Button.png" class="pause-action" id="resumeBtn" />
+        <img src="images/Resume Button.png" class="pause-action" id="resumeBtn"/>
+        <img src="images/Restart Button.png" class="pause-action" id="restartBtn"/>
 
-        <!-- Restart Button -->
-        <img src="images/Restart Button.png" class="pause-action" id="restartBtn" />
-
-        <!-- Bottom Icons -->
         <div class="pause-icons">
-            <div class="pause-icons">
-            <img src="images/Home Button.png" class="icon-btn" id="homeBtn" />
-            <img src="images/Instructions Button.png" class="icon-btn" id="pauseInstructionsBtn" />
-        
+          <img src="images/Home Button.png" class="icon-btn" id="homeBtn"/>
+          <img src="images/Instructions Button.png" class="icon-btn" id="pauseInstructionsBtn"/>
         </div>
 
-    </div>
-</div>
-
-    </div>
-<!-- Exit Overlay -->
-<div id="exitOverlay" class="overlay">
-  <div class="exit-modal">
-
-    <div class="exit-header">
-      <h2>EXIT?</h2>
-      <button class="closeBtn" id="closeExit">X</button>
+      </div>
     </div>
 
-    <div class="exit-body">
-      <button id="exit-yes">Yes</button>
-      <button id="exit-no">No</button>
+    <!-- ========== EXIT OVERLAY ========== -->
+    <div id="exitOverlay" class="overlay">
+      <div class="exit-modal">
+
+        <div class="exit-header">
+          <h2>EXIT?</h2>
+          <button class="closeBtn" id="closeExit">X</button>
+        </div>
+
+        <div class="exit-body">
+          <button id="exit-yes">Yes</button>
+          <button id="exit-no">No</button>
+        </div>
+
+      </div>
     </div>
 
   </div>
-</div>
-    <script src="JavaScript/gameplay.js"></script>
+
+  <script src="JavaScript/gameplay.js"></script>
+
 
 </body>
-
+ 
 </html>
