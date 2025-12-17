@@ -27,9 +27,40 @@
             </ul>
        </div>
       
-        <!-- Instructions Button -->
-         <img src="images/Instructions Button.png" alt="Instructions Button" class="instructions-button" id="instructionsBtn" />
+<!-- Instructions Overlay -->
+<div id="instructionsOverlay" class="overlay">
+  <div class="modal">
 
+    <div class="instructions-header">
+      <h1>INSTRUCTIONS</h1>
+      <button class="closeBtn" id="closeInstructions">X</button>
+    </div>
+
+    <h2>How To Play</h2>
+    <ol>
+      <li><img src="Play Now.png" alt="play" class="icon"> Play</li>
+      <li>Pick level: Easy (15 lives) | Medium (12) | Hard (9)</li>
+      <li>Tap letters to guess:
+        <ul>
+          <li>Correct = points</li>
+          <li>Wrong = lose lives & points</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Two Player Mode</h2>
+    <p>Player 1's score → Player 2's turn</p>
+    <p>Next → Scoreboard</p>
+
+    <h2>Controls</h2>
+    <p>
+      <img src="images/Instructions Button.png" class="icon"> Help |
+      <img src="images/Pause Button.png" class="icon"> Pause |
+      <img src="images/Home Button.png" class="icon"> Home
+    </p>
+
+  </div>
+</div>
         <!-- Pause Button -->
          <img src="images/Pause Button.png" alt="Pause Button" class="pause-button" id="pauseBtn" />
 
@@ -59,13 +90,29 @@
             <div class="pause-icons">
             <img src="images/Home Button.png" class="icon-btn" id="homeBtn" />
             <img src="images/Instructions Button.png" class="icon-btn" id="pauseInstructionsBtn" />
+        
         </div>
 
     </div>
 </div>
 
     </div>
+<!-- Exit Overlay -->
+<div id="exitOverlay" class="overlay">
+  <div class="exit-modal">
 
+    <div class="exit-header">
+      <h2>EXIT?</h2>
+      <button class="closeBtn" id="closeExit">X</button>
+    </div>
+
+    <div class="exit-body">
+      <button id="exit-yes">Yes</button>
+      <button id="exit-no">No</button>
+    </div>
+
+  </div>
+</div>
     <script src="JavaScript/gameplay.js"></script>
 
 </body>
