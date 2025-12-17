@@ -2,8 +2,8 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.3);
-  display: none;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;               /* hidden by default */
   justify-content: center;
   align-items: center;
   z-index: 100;
@@ -14,7 +14,7 @@
   background: #FCF5EE;
   width: 90vw;
   max-width: 400px;
-  height: auto;
+  max-height: 90vh;
   border-radius: 16px;
   padding: 16px;
   overflow-y: auto;
@@ -52,13 +52,14 @@
 .pause-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.45);
-  display: none;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;               /* hidden by default */
   justify-content: center;
   align-items: center;
   z-index: 200;
 }
 
+/* ---------- PAUSE POPUP ---------- */
 .pause-popup {
   background: #fff3eb;
   border-radius: 25px;
@@ -114,6 +115,7 @@
   overflow: hidden;
 }
 
+/* ---------- EXIT HEADER ---------- */
 .exit-header {
   background: linear-gradient(to right, #92487A, #540863);
   color: white;
@@ -123,6 +125,7 @@
   align-items: center;
 }
 
+/* ---------- EXIT BODY ---------- */
 .exit-body {
   padding: 16px;
   display: flex;
