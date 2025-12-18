@@ -1,29 +1,3 @@
-const difficulty = localStorage.getItem("difficulty");
-
-if (!difficulty) {
-  // Failsafe: force player to choose difficulty
-  window.location.href = "difficulty.html";
-}
-
-let maxGuesses;
-
-switch (difficulty) {
-  case "easy":
-    maxGuesses = 10;
-    break;
-  case "hard":
-    maxGuesses = 6;
-    break;
-  default:
-    maxGuesses = 10;
-}
-
-
-
-
-
-
-
 // Opens overlays
 const instructionsBtn = document.getElementById("instructionsBtn");
 const pauseBtn = document.getElementById("pauseBtn");
@@ -33,24 +7,28 @@ const instructionsOverlay = document.getElementById("instructionsOverlay");
 const pauseOverlay = document.getElementById("pauseOverlay");
 const exitOverlay = document.getElementById("exitOverlay");
 
-// Instructions overlay close
+// Instruction controls
 const closeInstructionsBtn = document.getElementById("closeInstructions");
 
-// Pause overlay buttons
-const closePauseBtn = document.getElementById("closePause");
+// Pause controls
+const closePauseBtn = document.getElementById("closePauseBtn"); 
 const resumeBtn = document.getElementById("resumeBtn");
 const restartBtn = document.getElementById("restartBtn");
 const pauseInstructionsBtn = document.getElementById("pauseInstructionsBtn");
 const homeBtn = document.getElementById("homeBtn");
 
-// Exit overlay buttons
+// Exit controls
 const closeExitBtn = document.getElementById("closeExit");
 const exitYesBtn = document.getElementById("exit-yes");
 const exitNoBtn = document.getElementById("exit-no");
 
+// Track where instructions opened from
 let instructionsFromPause = false;
 
-/* helper functions */
+/* ===============================
+   HELPER FUNCTIONS
+================================ */
+
 function showOverlay(overlay) {
   if (overlay) overlay.style.display = "flex";
 }
@@ -63,17 +41,26 @@ function closeExitOverlay() {
   hideOverlay(exitOverlay);
 }
 
-/* pause logic */
+/* ===============================
+   PAUSE OVERLAY LOGIC
+================================ */
+
 if (pauseBtn && pauseOverlay) {
-  pauseBtn.addEventListener("click", () => showOverlay(pauseOverlay));
+  pauseBtn.addEventListener("click", () => {
+    showOverlay(pauseOverlay);
+  });
 }
 
 if (closePauseBtn && pauseOverlay) {
-  closePauseBtn.addEventListener("click", () => hideOverlay(pauseOverlay));
+  closePauseBtn.addEventListener("click", () => {
+    hideOverlay(pauseOverlay);
+  });
 }
 
 if (resumeBtn && pauseOverlay) {
-  resumeBtn.addEventListener("click", () => hideOverlay(pauseOverlay));
+  resumeBtn.addEventListener("click", () => {
+    hideOverlay(pauseOverlay);
+  });
 }
 
 if (restartBtn) {
@@ -83,7 +70,10 @@ if (restartBtn) {
   });
 }
 
-/* instructions */
+/* ===============================
+   INSTRUCTIONS OVERLAY LOGIC
+================================ */
+
 if (instructionsBtn && instructionsOverlay) {
   instructionsBtn.addEventListener("click", () => {
     instructionsFromPause = false;
@@ -102,11 +92,16 @@ if (pauseInstructionsBtn && instructionsOverlay) {
 if (closeInstructionsBtn && instructionsOverlay) {
   closeInstructionsBtn.addEventListener("click", () => {
     hideOverlay(instructionsOverlay);
-    if (instructionsFromPause) showOverlay(pauseOverlay);
+    if (instructionsFromPause) {
+      showOverlay(pauseOverlay);
+    }
   });
 }
 
-/* exit */
+/* ===============================
+   EXIT OVERLAY LOGIC
+================================ */
+
 if (homeBtn && exitOverlay) {
   homeBtn.addEventListener("click", () => {
     hideOverlay(pauseOverlay);
@@ -114,37 +109,16 @@ if (homeBtn && exitOverlay) {
   });
 }
 
-if (exitNoBtn) exitNoBtn.addEventListener("click", closeExitOverlay);
-if (closeExitBtn) closeExitBtn.addEventListener("click", closeExitOverlay);
+if (exitNoBtn) {
+  exitNoBtn.addEventListener("click", closeExitOverlay);
+}
+
+if (closeExitBtn) {
+  closeExitBtn.addEventListener("click", closeExitOverlay);
+}
 
 if (exitYesBtn) {
   exitYesBtn.addEventListener("click", () => {
     window.location.href = "homescreen.html";
   });
 }
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const difficulty = localStorage.getItem("difficulty");
-
-  // Force difficulty selection
-  if (!difficulty) {
-    window.location.href = "difficulty.html";
-    return;
-  }
-
- 
-
-  // UI
-  document.getElementById("difficultyText").innerText =
-    `Difficulty: ${difficulty.toUpperCase()}`;
-
-
-
-  // Restart button
-  document.getElementById("restartBtn").addEventListener("click", () => {
-    localStorage.removeItem("difficulty");
-    window.location.href = "difficulty.html";
-  });
-});

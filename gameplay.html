@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hangman</title>
     <link rel="stylesheet" href="css/gameplay.css" />
-    <link rel="stylesheet" href="css/overlays.css"/>
 </head>
 
 <body>
@@ -19,7 +18,7 @@
        <div class=  "game-box">
             <ul class = "word-display">
                 <li class="letter"></li>
-                <li class="letter">j</li>
+                <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
@@ -29,94 +28,52 @@
             <h4 class = "hint-text">Hint: <b></b></h4>
             <h4 class = "guesses-text"> Incorrect guesses: <b></b></h4>
             <div class = "keyboard">
-                <div class="keyboard">
-  <!-- Row 1 -->
-  <div>
-    <button>q</button>
-    <button>w</button>
-    <button>e</button>
-    <button>r</button>
-    <button>t</button>
-    <button>y</button>
-    <button>u</button>
-    <button>i</button>
-    <button>o</button>
-    <button>p</button>
-  </div>
+                 <button>a</button>
+                 <button>b</button>
+                 <button>c</button>
+                 <button>d</button>
+                 <button>e</button>
+                 <button>f</button>
+                 <button>g</button>
+                 <button>h</button>
+                 <button>i</button>
+                 <button>j</button>
+                 <button>k</button>
+                 <button>l</button>
+                 <button>m</button>
+                 <button>n</button>
+                 <button>o</button>
+                 <button>p</button>
+                 <button>q</button>
+                 <button>r</button>
+                 <button>s</button>
+                 <button>t</button>
+                 <button>u</button>
+                 <button>v</button>
+                 <button>w</button>
+                 <button>x</button>
+                 <button>y</button>
+                 <button>z</button>
 
-  <!-- Row 2 -->
-  <div>
-    <button>a</button>
-    <button>s</button>
-    <button>d</button>
-    <button>f</button>
-    <button>g</button>
-    <button>h</button>
-    <button>j</button>
-    <button>k</button>
-    <button>l</button>
-  </div>
-
-  <!-- Row 3 -->
-  <div>
-    <button>z</button>
-    <button>x</button>
-    <button>c</button>
-    <button>v</button>
-    <button>b</button>
-    <button>n</button>
-    <button>m</button>
-  </div>
             </div>
        </div>
       
-    <img 
-      src="images/Instructions Button.png"
-      alt="Instructions Button"
-      class="instructions-button"
-      id="instructionsBtn"
-    />
+        <img 
+        src="images/Instructions Button.png"
+        alt="Instructions Button"
+        class="instructions-button"
+        id="instructionsBtn"
+        />
 
-    <!-- Pause Button -->
-    <img
-      src="images/Pause Button.png"
-      alt="Pause Button"
-      class="pause-button"
-      id="pauseBtn"
-    />
+        <!-- Pause Button -->
+        <img
+        src="images/Pause Button.png"
+        alt="Pause Button"
+        class="pause-button"
+        id="pauseBtn"
+        />
 
-    <!-- ========== INSTRUCTIONS OVERLAY ========== -->
-    <div id="instructionsOverlay" class="overlay">
-      <div class="modal">
-
-        <div class="instructions-header">
-          <h1>INSTRUCTIONS</h1>
-          <button class="closeBtn" id="closeInstructions">X</button>
-        </div>
-
-        <h2>How To Play</h2>
-        <ol>
-          <li><img src="images/Play Now Button.png" class="icon"> Play</li>
-          <li>Pick level: Easy (15 lives) | Medium (12) | Hard (9).</li>
-          <li>Tap letters to guess:
-            <ul>
-              <li>Correct = points</li>
-              <li>Wrong = lose lives & points</li>
-            </ul>
-          </li>
-        </ol>
-
-        <h2>Two Player Mode</h2>
-        <p>Player 1 → Player 2 → Scoreboard</p>
-
-        <h2>Controls</h2>
-        <p>
-          <img src="images/Instructions Button.png" class="icon"> Help |
-          <img src="images/Pause Button.png" class="icon"> Pause |
-          <img src="images/Home Button.png" class="icon"> Home
-        </p>
-
-      </div>
+    
     </div>
 
     <!-- ========== PAUSE OVERLAY ========== -->
@@ -140,26 +97,11 @@
       </div>
     </div>
 
-    <!-- ========== EXIT OVERLAY ========== -->
-    <div id="exitOverlay" class="overlay">
-      <div class="exit-modal">
 
-        <div class="exit-header">
-          <h2>EXIT?</h2>
-          <button class="closeBtn" id="closeExit">X</button>
-        </div>
-
-        <div class="exit-body">
-          <button id="exit-yes">Yes</button>
-          <button id="exit-no">No</button>
-        </div>
-
-      </div>
-    </div>
 
   </div>
-  
-  <script src="JavaScript/word-list.js"></script>
+
+  <script src = "JavaScript/word-list.js"></script>
   <script src="JavaScript/gameplay.js"></script>
 
 
