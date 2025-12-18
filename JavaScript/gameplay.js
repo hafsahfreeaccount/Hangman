@@ -1,3 +1,16 @@
+// stores difficulty lebels in local storage
+document.addEventListener("DOMContentLoaded", () => {
+  const difficulty = localStorage.getItem("difficulty");
+
+  // Force difficulty selection
+  if (!difficulty) {
+    window.location.href = "difficulty.html";
+    return;
+  }})
+
+
+
+
 // Opens overlays
 const instructionsBtn = document.getElementById("instructionsBtn");
 const pauseBtn = document.getElementById("pauseBtn");
@@ -122,3 +135,21 @@ if (exitYesBtn) {
     window.location.href = "homescreen.html";
   });
 }
+
+//interactive keyboard and adding event listeners
+
+const keyboardDiv = document.querySelector(".keyboard");
+
+const getRandomWord = () => {
+  //selecting a random word and hint from the word lsit
+  const {word, hint} = wordList[Math,floor(Math.random() * wordList.length)];
+  console.log(word,hint);
+}
+
+for (let i = 97; i <= 122; i++) {
+    const button = document.createElement("button");
+    button.innerText = String.fromCharCode(i);
+    keyboardDiv.appendChild(button);
+}
+getRandomWord();
+playAgainBtn.addEventListener("click", getRandomWord);
