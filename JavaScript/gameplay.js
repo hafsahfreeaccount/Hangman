@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!difficulty) {
     window.location.href = "difficulty.html";
     return;
-  }})
+  }
 
 
 
@@ -87,18 +87,15 @@ if (restartBtn) {
    INSTRUCTIONS OVERLAY LOGIC
 ================================ */
 
-if (instructionsBtn && instructionsOverlay) {
+if (instructionsBtn) {
   instructionsBtn.addEventListener("click", () => {
-    instructionsFromPause = false;
-    showOverlay(instructionsOverlay);
+    window.location.href = "instructions.html";
   });
 }
 
-if (pauseInstructionsBtn && instructionsOverlay) {
+if (pauseInstructionsBtn) {
   pauseInstructionsBtn.addEventListener("click", () => {
-    instructionsFromPause = true;
-    hideOverlay(pauseOverlay);
-    showOverlay(instructionsOverlay);
+    window.location.href = "instructions.html";
   });
 }
 
@@ -115,12 +112,12 @@ if (closeInstructionsBtn && instructionsOverlay) {
    EXIT OVERLAY LOGIC
 ================================ */
 
-if (homeBtn && exitOverlay) {
+if (homeBtn) {
   homeBtn.addEventListener("click", () => {
-    hideOverlay(pauseOverlay);
-    showOverlay(exitOverlay);
+    window.location.href = "homescreen.html";
   });
 }
+
 
 if (exitNoBtn) {
   exitNoBtn.addEventListener("click", closeExitOverlay);
@@ -137,8 +134,6 @@ if (exitYesBtn) {
 }
 
 //word display and keyboard generation
-
-document.addEventListener("DOMContentLoaded", () => {
 
     // WORD BANK
     const WORDS = ["javascript", "hangman", "developer", "keyboard", "browser"];
