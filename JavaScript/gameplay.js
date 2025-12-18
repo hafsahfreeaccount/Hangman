@@ -136,20 +136,95 @@ if (exitYesBtn) {
   });
 }
 
-//interactive keyboard and adding event listeners
+//word display and keyboard generation
 
-const keyboardDiv = document.querySelector(".keyboard");
+document.addEventListener("DOMContentLoaded", () => {
 
-const getRandomWord = () => {
-  //selecting a random word and hint from the word lsit
-  const {word, hint} = wordList[Math,floor(Math.random() * wordList.length)];
-  console.log(word,hint);
-}
+    // WORD BANK
+    const WORDS = ["javascript", "hangman", "developer", "keyboard", "browser"];
+    let selectedWord = WORDS[Math.floor(Math.random() * WORDS.length)];
+    let guessedLetters = [];
+    let wrongGuesses = 0;
+    const maxWrong = 6;
 
-for (let i = 97; i <= 122; i++) {
-    const button = document.createElement("button");
-    button.innerText = String.fromCharCode(i);
-    keyboardDiv.appendChild(button);
-}
-getRandomWord();
-playAgainBtn.addEventListener("click", getRandomWord);
+    // DOM Elements
+    const wordDisplay = document.querySelector(".word-display");
+    const keyboardDiv = document.querySelector(".keyboard");
+    const guessesText = document.querySelector(".guesses-text b");
+
+    // GENERATE BLANKS
+    function createBlanks() {
+        wordDisplay.innerHTML = "";
+        for (let i = 0; i < selectedWord.length; i++) {
+            const li = document.createElement("li");
+            li.classList.add("letter");
+            li.textContent = "_";
+            wordDisplay.appendChild(li);
+        }
+    }
+
+    // GENERATE KEYBOARD
+    function createKeyboard() {
+        keyboardDiv.innerHTML = "";
+        for (let i = 97; i <= 122; i++) {
+            const button = document.createElement("button");
+            button.innerText = String.fromCharCode(i);
+            button.addEventListener("click", () => handleGuess(button));
+            keyboardDiv.appendChild(button);
+        }
+    }
+
+    // HANDLE GUESS
+    function handleGuess(button) {
+        const letter = button.innerText.toLowerCase();
+        button.disabled = true;
+
+        if (selectedWord.includes(letter)) {
+            guessedLetters.push(letter);
+            updateWordDisplay();
+            checkWin();
+        } else {
+            wrongGuesses++;
+            guessesText.textContent = wrongGuesses;
+            checkLose();
+        }
+    }
+
+    // UPDATE BLANKS
+    function updateWordDisplay() {
+        const letters = wordDisplay.querySelectorAll("li");
+        for (let i = 0; i < selectedWord.length; i++) {
+            letters[i].textContent = guessedLetters.includes(selectedWord[i]) ? selectedWord[i] : "_";
+        }
+    }
+
+    // CHECK WIN
+    function checkWin() {
+        if (!wordDisplay.textContent.includes("_")) {
+            alert("🎉 You Win!");
+            disableKeyboard();
+        }
+    }
+
+    // CHECK LOSE
+    function checkLose() {
+        if (wrongGuesses >= maxWrong) {
+            alert(`💀 You Lost! Word was "${selectedWord}"`);
+            disableKeyboard();
+        }
+    }
+
+    function disableKeyboard() {
+        keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = true);
+    }
+
+    // INIT GAME
+    createBlanks();
+    createKeyboard();
+
+});
+
+
+
+
+

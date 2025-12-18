@@ -1,4 +1,4 @@
-const wordLists = {
+const wordList = {
     easy: [
         {word: "apple", hint: "Ared or green fruit" },
         {word: "house", hint: "A place to live" },
