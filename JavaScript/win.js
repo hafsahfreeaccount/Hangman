@@ -23,8 +23,8 @@ nextBtn.style.fontSize = "1rem";
 if (player === "1") {
     nextBtn.textContent = "Player 2's Turn";
     nextBtn.addEventListener("click", () => {
-        localStorage.setItem("currentPlayer", "2");
-        window.location.href = `gameplay.html?difficulty=${difficulty}`;
+        // Pass player=2 in URL
+        window.location.href = `gameplay.html?player=2&difficulty=${difficulty}`;
     });
 } else {
     nextBtn.textContent = "Next";

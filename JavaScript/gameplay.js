@@ -1,21 +1,35 @@
-// Track current player
-let currentPlayer = localStorage.getItem("currentPlayer") || "1";
-// update text on load
-document.getElementById("playerTurn").textContent = `Player ${currentPlayer}'s Turn`;
-
-
-// stores difficulty lebels in local storage
 document.addEventListener("DOMContentLoaded", () => {
-  const difficulty = localStorage.getItem("difficulty");
 
-  // Force difficulty selection
-  if (!difficulty) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const difficultyParam = urlParams.get("difficulty");
-    const difficulty = difficultyParam || localStorage.getItem("difficulty");
+// Get URL params
+const urlParams = new URLSearchParams(window.location.search);
+const playerParam = urlParams.get("player");           // from win/lost page
+const difficultyParam = urlParams.get("difficulty");   // difficulty passed from previous page
+
+// Set difficulty from URL or fallback to localStorage
+const difficulty = difficultyParam || localStorage.getItem("difficulty");
+if (!difficulty) {
+    window.location.href = "difficulty.html";
     return;
-  }
+}
 
+// Determine current player
+let currentPlayer;
+if (playerParam) {
+    currentPlayer = playerParam; // URL param takes priority
+} else {
+    currentPlayer = "1"; // default first player
+}
+
+// Update player turn display
+const playerTurnDisplay = document.getElementById("playerTurn");
+if (playerTurnDisplay) {
+    playerTurnDisplay.textContent = `Player ${currentPlayer}'s Turn`;
+    playerTurnDisplay.style.color = "#92487A"; // optional purple
+    playerTurnDisplay.style.marginLeft = "5px"; // nudge right
+}
+
+// Save current player to localStorage only for continuity if you want page reload to keep state
+localStorage.setItem("currentPlayer", currentPlayer);
 
 
 
