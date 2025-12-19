@@ -508,7 +508,8 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.3|Choose a difficulty level|Click easy, medium or hard|Player 1 gameplay screen appears with masked word and keyboard| | |
 |1.4|Player 1 guesses a correct letter|Player 1 taps a correct letter on the on-screen alphabet|Correct letter appears in the word; button turns green| | |
 |1.5|Player 1 guesses an incorrect letter|Player 1 taps a wrong letter|Letter turns red; rope/hangman progresses| | |
-|1.6|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible| | |
+|1.6|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible|"Player 2's turn" button was not appearing <img width="598" height="829" alt="Screenshot 2025-12-19 200048" src="https://github.com/user-attachments/assets/f00a75c1-2714-4642-ba0c-37e1d7745ef7" />|win.html was being linked to the lost.js, so this had to be changed to win.js <img width="803" height="667" alt="Screenshot 2025-12-19 200008" src="https://github.com/user-attachments/assets/44693585-dd1c-4690-9800-e2bf95740f51" />|
+|**1.6 (Retest)**|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible|| |
 |1.7|Player 1 loses|Player 1 runs out of attempts|Lose screen loads, correct word displayed, “Player 2’s Turn >” button visible| | |
 |1.8|Start Player 2 turn|Player 2 clicks “Player 2’s Turn >”|A new gameplay screen loads for Player 2 with a new word| | |
 |1.9|Player 2 guesses letters|Player 2 plays normally|Correct/incorrect visual feedback plays as expected| | |
@@ -520,12 +521,12 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state| | |
 |1.16|Restart game during Player 1 or Player 2|Click restart button in pause menu|Current player's round resets with a new word| | |
 |1.17|Exit to home menu|Click exit in settings|Player is returned to the home screen| | |
-|1.18|Prevent double input|Tap the same letter twice|Second tap ignored, no error| | |
+|1.18|Prevent double input|Tap the same letter twice|Second tap ignored, no error|Second tap ignored, no error|n/a|
 
 
 
 ## Individual Contributions
-Rushda - Designed the gameplay screen, the “You lose” wireframe and pause menu. Created gameplay flowchart and test table. Coded the starting and landing screen as well as coding the ‘hangman’ visual, enforcing the 2-player state alongside the “You lose” screen. I also added the pause menu along with the corresponding icons.
+Rushda - Designed the gameplay screen, the “You lose” wireframe and pause menu. Coded the starting and landing screen as well as coding the ‘hangman’ visual, enforcing the 2-player state alongside the “You lose” screen. I also added the pause menu along with the corresponding icons.
 Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart, created home page, difficulty level, summarised gameplay and scoreboard pseudocode and coded instructions, exit and pause menu and points for scoreboard scoring screens. 
 Hafsah -
 
