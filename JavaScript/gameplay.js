@@ -140,7 +140,16 @@ if (exitYesBtn) {
     let selectedWord = WORDS[Math.floor(Math.random() * WORDS.length)];
     let guessedLetters = [];
     let wrongGuesses = 0;
-    const maxWrong = 6;
+
+    // Set max attempts based on difficulty
+    let maxWrong;
+    if (difficulty === "easy") {
+      maxWrong = 8;
+    } else if (difficulty === "hard") {
+      maxWrong = 5;
+    } else {
+      maxWrong = 6;
+    }
 
     // DOM Elements
     const wordDisplay = document.querySelector(".word-display");
@@ -218,8 +227,3 @@ if (exitYesBtn) {
     createKeyboard();
 
 });
-
-
-
-
-
