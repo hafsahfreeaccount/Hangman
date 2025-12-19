@@ -513,14 +513,14 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.7|Player 1 loses|Player 1 runs out of attempts|Lose screen loads, correct word displayed, “Player 2’s Turn >” button visible|Lose screen loads, correct word displayed, “Player 2’s Turn >” button visible <img width="295" height="402" alt="image" src="https://github.com/user-attachments/assets/c25cd24b-5c5f-47e0-99cc-935f5d71f5e1" /> <img width="258" height="373" alt="image" src="https://github.com/user-attachments/assets/c814527b-4c66-4c0d-8a49-757d78ac6536" />|n/a|
 |1.8|Start Player 2 turn|Player 2 clicks “Player 2’s Turn >”|A new gameplay screen loads for Player 2 with a new word|A new gameplay screen loads for Player 2 with a new word <img width="197" height="387" alt="image" src="https://github.com/user-attachments/assets/d865d2a7-b9d6-4712-aafa-12f13a912b6e" />|n/a|
 |1.9|Player 2 guesses letters|Player 2 plays normally|Correct/incorrect visual feedback plays as expected|Correct/incorrect visual feedback plays as expected|n/a|
-|1.10|Player 2 completes word|Player 2 wins their round|“YOU WON!” screen appears showing Player 2 points| | |
-|1.11|Player 2 fails the word|Player 2 runs out of attempts|“YOU LOST!” screen appears showing Player 2 points| | |
+|1.10|Player 2 completes word|Player 2 wins their round|“YOU WON!” screen appears with "Next" button|“YOU WON!” screen appears with "Next" button <img width="292" height="470" alt="image" src="https://github.com/user-attachments/assets/6488e4f4-9310-4e23-bc34-25708da1605a" /> <img width="259" height="374" alt="image" src="https://github.com/user-attachments/assets/6f095e7c-8744-4913-91ae-91d15dc61bbc" />|n/a|
+|1.11|Player 2 fails the word|Player 2 runs out of attempts|“YOU LOST!” screen appears with "Next" button|“YOU LOST!” screen appears with "Next" button <img width="292" height="328" alt="image" src="https://github.com/user-attachments/assets/bb367774-244c-45c9-9713-163fba282f7a" /> <img width="259" height="373" alt="image" src="https://github.com/user-attachments/assets/a714ac37-8039-42dc-bcdc-67670d20e421" />|n/a|
 |1.12|Final scoreboard displays|After Player 2’s round ends|Scoreboard loads showing Player 1 score + Player 2 score| | |
-|1.13|Pause button works|Player clicks pause icon during gameplay|Game freezes; input disabled until resumed| | |
-|1.14|Resume gameplay|Click resume button|Game continues from same state| | |
+|1.13|Pause button works|Player clicks pause icon during gameplay|Game freezes; input disabled until resumed|Game freezes; input disabled until resumed <img width="300" height="412" alt="image" src="https://github.com/user-attachments/assets/53ea08cc-534f-4105-8b8f-61f86c28b633" />|n/a|
+|1.14|Resume gameplay|Click resume button|Game continues from same state|Game continues from same state|n/a|
 |1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state| | |
-|1.16|Restart game during Player 1 or Player 2|Click restart button in pause menu|Current player's round resets with a new word| | |
-|1.17|Exit to home menu|Click exit in settings|Player is returned to the home screen| | |
+|1.16|Restart game during Player 1 or Player 2|Click restart button in pause menu|Current player's round resets with a new word|Current player's round resets with a new word|n/a|
+|1.17|Exit to home menu|Click exit in settings|Player is returned to the home screen|Player is returned to the home screen|n/a|
 |1.18|Prevent double input|Tap the same letter twice|Second tap ignored, no error|Second tap ignored, no error|n/a|
 
 
