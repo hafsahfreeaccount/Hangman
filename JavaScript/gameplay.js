@@ -54,6 +54,13 @@ function closeExitOverlay() {
   hideOverlay(exitOverlay);
 }
 
+function showHangmanPart(partNumber) {
+    if (hangmanParts[partNumber - 1]) {
+        hangmanParts[partNumber - 1].style.display = "block";
+    }
+}
+
+
 /* ===============================
    PAUSE OVERLAY LOGIC
 ================================ */
@@ -146,7 +153,7 @@ if (exitYesBtn) {
     if (difficulty === "easy") {
       maxWrong = 8;
     } else if (difficulty === "hard") {
-      maxWrong = 5;
+      maxWrong = 6;
     } else {
       maxWrong = 6;
     }
@@ -155,6 +162,9 @@ if (exitYesBtn) {
     const wordDisplay = document.querySelector(".word-display");
     const keyboardDiv = document.querySelector(".keyboard");
     const guessesText = document.querySelector(".guesses-text b");
+
+    // HANGMAN PARTS
+    const hangmanParts = document.querySelectorAll(".hangman-part");
 
     // GENERATE BLANKS
     function createBlanks() {
@@ -190,6 +200,7 @@ if (exitYesBtn) {
         } else {
             wrongGuesses++;
             guessesText.textContent = wrongGuesses;
+            showHangmanPart(wrongGuesses);
             checkLose();
         }
     }

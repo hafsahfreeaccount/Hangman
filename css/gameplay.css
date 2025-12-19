@@ -20,21 +20,71 @@ body {
   box-sizing: border-box;
 }
 
+/* Container keeps bar size naturally */
 .hangman-box {
-  display: flex;
-  justify-content: center;
-
-}
-
-.img {
-    display: block;
-    margin:10px;
+    position: relative;
     width: 60%;
     max-width: 300px;
-    height:25%;
-
-  position: relative;
+    height: 300px;
+    margin: 10px auto;
 }
+
+/* Bar image */
+.img {
+    display: block;
+    width: 65%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* All hangman parts */
+.hangman-box .hangman-part {
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    z-index: 2;
+}
+
+/* Individual parts positions relative to container */
+.hangman-box .head {
+    top: 50%;
+    left: 45%;
+    width: 22%;
+}
+
+.hangman-box .body {
+    top: 62%;
+    left: 46%;
+    width: 20%;
+}
+
+.hangman-box .left-arm {
+    top: 61%;
+    left: 40%;
+    width: 8%;
+}
+
+.hangman-box .right-arm {
+    top: 61%;
+    left: 64%;
+    width: 8%;
+}
+
+.hangman-box .left-leg {
+    top: 69%;
+    left: 47%;
+    width: 8%;
+}
+
+.hangman-box .right-leg {
+    top: 69%;
+    left: 57%;
+    width: 8%;
+}
+
+
 
 /* Instructions Button */
 .instructions-button {
