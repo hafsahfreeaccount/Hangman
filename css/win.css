@@ -35,13 +35,13 @@ body {
 }
 
 
-/* Sad Hangman Image */
-.sad-hangman {
+/* Happy Hangman Image */
+.happy-hangman {
   position: absolute;
-  top: 0px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  width: 85px;
+  width: 100px;
 }
 
 /* Pause bar */
@@ -49,7 +49,6 @@ body {
   background: linear-gradient(to right, #92487A, #f3a0b2, #92487A);
   color: white;
   font-weight: 900;
-  text-align: center;
   font-size: 24px;
   padding: 18px 0;
   margin: -25px -20px 20px; 
@@ -61,7 +60,7 @@ body {
 .win-popup {
   position: absolute;
   left: 50%;
-  bottom: 25%;
+  bottom: 15px;
   transform: translateX(-50%);
 
   background: #92487A;
@@ -72,8 +71,4 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   text-align: center;
   border: 2px solid #92487A;
-}
-
-.p {
-
 }

@@ -1,3 +1,9 @@
+// Track current player
+let currentPlayer = localStorage.getItem("currentPlayer") || "1";
+// update text on load
+document.getElementById("playerTurn").textContent = `Player ${currentPlayer}'s Turn`;
+
+
 // stores difficulty lebels in local storage
 document.addEventListener("DOMContentLoaded", () => {
   const difficulty = localStorage.getItem("difficulty");
@@ -242,6 +248,7 @@ if (exitYesBtn) {
         if (!wordDisplay.textContent.includes("_")) {
             alert("🎉 You Win!");
             disableKeyboard();
+            window.location.href = `win.html?player=${currentPlayer}&difficulty=${difficulty}`;
         }
     }
 
@@ -253,6 +260,7 @@ if (exitYesBtn) {
         setTimeout(() => {
             alert(`💀 You Lost! Word was "${selectedWord}"`);
             disableKeyboard();
+            window.location.href = `lost.html?player=${currentPlayer}&difficulty=${difficulty}`;
           }, 0);
         }
       }
