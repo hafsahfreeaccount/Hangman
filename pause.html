@@ -1,47 +1,32 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="overlays.css">
-<title>Pause</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pause</title>
+  <link rel="stylesheet" href="pause.css">
 </head>
 
 <body>
 
-<main class="pause-menu">
+<main class="pause-overlay">
+  <section class="pause-popup" role="dialog" aria-modal="true">
 
-<section class=pause-overlay" role="dialog" aria-modal="true" aria-labelledby="pause-title">
-<article class="pause-popup">
+    <header class="pause-header">
+      <h1>PAUSE</h1>
+      <button class="pause-close" aria-label="Close pause menu"
+              onclick="location.href='gameplay.html'">×</button>
+    </header>
 
-<header class="pause-header">
-<h1 id="pause-title">PAUSE</h1>
-<a href="gameplay.html" class="icon-btn">
-<img src="images/Close Button.png" alt="closePauseButton">
-</header>
+    <section class="pause-content">
+      <button onclick="location.href='gameplay.html'">Resume</button>
+      <button onclick="location.href='gameplay.html'">Restart</button>
+      <button onclick="location.href='homescreen.html'">Home</button>
+      <button onclick="location.href='instructions.html'">Help</button>
+    </section>
 
-<section class="menu-content">
-<a href="gameplay.html" class="icon-btn">
-<img src="images/Resume Button.png" alt"Resume">
-</a>
-<a href="gameplay.html" class="icon-btn">
-<img src="images/Restart Button.png" alt="Restart">
-</a>
-</section>
-
-<nav class="pause-icons>
-<a href="instructions.html" class="icon-btn">
-<img src="images/Instructions Button.png" alt="Help">
-</a>
-<a href="homescreen.html" class="icon-btn">
-<img src="images/Home Button.png" alt="Home">
-</a>
-</nav>
-
-</article>
-</section>
+  </section>
+</main>
 
 </body>
 </html>
