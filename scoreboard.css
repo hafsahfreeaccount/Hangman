@@ -1,0 +1,163 @@
+/* ===============================
+Page
+================================ */
+body {
+margin: 0;
+min-height: 100vh;
+background: #8D7D7D;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-family: 'Rubik', sans-serif;
+}
+
+/* ===============================
+Scoreboard container
+(Figma: 323 x 482)
+================================ */
+.scoreboard {
+width: 323px;
+background: #FCF5EE;
+border: 6px solid #FFC4C4;
+border-radius: 28px;
+padding: 18px 18px 26px;
+
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ===============================
+Header
+(Figma: 323.4 x 79.2)
+================================ */
+.scoreboard-header {
+height: 79.2px;
+
+background: linear-gradient(
+90deg,
+#92487A 100%,#FFC4C4 0%, #EE6983 100%
+);
+
+border-radius: 22px;
+padding: 0 18px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/* SCOREBOARD text */
+.scoreboard-header h1 {
+font-family: 'Rubik', sans-serif;
+font-size: 24px;
+font-weight: bold;
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Close button (pink circle, purple X) */
+.close-btn {
+width: 28px;
+height: 28px;
+
+border-radius: 50%;
+border: none;
+
+background: #FFC4C4;
+color: #92487A;
+
+font-weight: bold;
+font-size: 14px;
+cursor: pointer;
+}
+
+/* ===============================
+Player cards
+================================ */
+.player-score {
+background: #92487A;
+border-radius: 22px;
+padding: 16px 20px;
+margin: 18px 0;
+
+box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+.player-score h2 {
+font-family: 'Fredoka', sans-serif;
+font-size: 18px;
+margin: 0 0 6px;
+
+color: #FFFFFF;
+
+/* pink text outline */
+text-shadow:
+-1px 0 #FFC4C4,
+1px 0 #FFC4C4,
+0 -1px #FFC4C4,
+0 1px #FFC4C4;
+}
+
+.player-score p {
+font-size: 16px;
+font-weight: 600;
+margin: 0;
+color: #FFFFFF;
+}
+
+/* ===============================
+Buttons
+================================ */
+.scoreboard-buttons {
+margin-top: 26px;
+text-align: center;
+}
+
+/* New game button */
+#newGameBtn {
+background: #FFC4C4;
+border: none;
+border-radius: 32px;
+padding: 14px 46px;
+
+font-family: 'Fredoka', sans-serif;
+font-size: 20px;
+color: #FFFFFF;
+cursor: pointer;
+
+/* purple text outline only */
+text-shadow:
+-1px 0 #540863,
+1px 0 #540863,
+0 -1px #540863,
+0 1px #540863;
+
+box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+/* Main menu link */
+.scoreboard-buttons a {
+display: block;
+margin-top: 10px;
+
+font-size: 13px;
+color: #FFFFFF;
+
+text-decoration: underline;
+text-decoration-color: #92487A;
+text-decoration-thickness: 2px;
+
+/* purple text outline */
+text-shadow:
+
+-1px 0 #92487A,
+1px 0 #92487A,
+0 -1px #92487A,
+0 1px #92487A;
+}

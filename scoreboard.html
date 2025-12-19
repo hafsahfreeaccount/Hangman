@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="scoreboard.css">
+
+	<title>Scoreboard</title>
+	<script src="javascript/scoreboard.js" defer></script>
+</head>
+
+<body>
+	<main class="scoreboard">
+
+		<header class="scoreboard-header">
+			<h1>SCOREBOARD</h1>
+			<button class="close-btn" aria-label="close scoreboard">X</button>
+		</header>
+
+		<section class="player-score" id="player1">
+			<h2>Player 01</h2>
+			<p>Score: <output id="p1Score">0</output></p>
+		</section>
+
+		<section class="player-score" id="player2">
+			<h2>Player 02</h2>
+			<p>Score: <output id="p2Score">0</output></p>
+		</section>
+
+		<nav class="scoreboard-buttons">
+			<button id="newGameBtn">New game?</button>
+			<a href="homescreen.html">Main menu</a>
+		</nav>
+
+	</main>
+</body>
+</html>
