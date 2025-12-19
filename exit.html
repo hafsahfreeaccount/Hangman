@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="overlays.css">
-<title>Exit?</title>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="overlays.css">
+  <title>Exit?</title>
 </head>
 
 <body>
 
 <main class="modal">
 
-<header class="exit-header">
-<h2>EXIT?</h2>
- <a href="pause.html">
-  <img src="close-button.png" alt="pause" id="icon">
- </a>
-</header>
+  <header class="exit-header">
+    <h2>EXIT?</h2>
+    <button 
+      class="close-btn"
+      onclick="location.href='pause.html'"
+      aria-label="Close exit menu">
+      ×
+    </button>
+  </header>
 
-<section class="exit-body">
-<a href="homescreen.html">
- <img src="yes-button.png" alt="yes" id="icon">
-</a>
-<a href="pause.html">
- <img src="no-button.png" alt="no" id="icon">
-</a>
+  <section class="exit-body">
+    <button 
+      class="exit-btn yes"
+      onclick="location.href='homescreen.html'">
+      Yes
+    </button>
 
-</section>
+    <button 
+      class="exit-btn no"
+      onclick="location.href='pause.html'">
+      No
+    </button>
+  </section>
+
 </main>
 
 </body>
 </html>
-
