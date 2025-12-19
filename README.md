@@ -505,7 +505,7 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.1|Launch the game website|Open game URL in browser|Main menu loads with play button|Main menu loads with play button <img width="299" height="414" alt="image" src="https://github.com/user-attachments/assets/0326b3d6-41ac-47ea-9554-e51e6ba8aed2" />|n/a|
 |1.2|Start a game|Click play button|Landing screen loads for 2 seconds|Button was not working when pressed (Was not being directed to landing screen)|I had not given the playbutton an ID so the javascript was not being implemented. ID was added to change this <img width="937" height="616" alt="Screenshot 2025-12-09 201047" src="https://github.com/user-attachments/assets/ad49692d-c5be-4aab-855d-9b4d0c23b492" />|
 |**1.2 (Retest)**|Start a game|Click play button|Landing screen loads for 2 seconds|Landing screen loads for 2 seconds <img width="297" height="413" alt="image" src="https://github.com/user-attachments/assets/a734cc4b-1d5f-42b5-ab91-c47e0052879c" />|n/a|
-|1.3|Choose a difficulty level|Click easy, medium or hard|Player 1 gameplay screen appears with masked word and keyboard| | |
+|1.3|Choose a difficulty level|Click easy or hard|Easy and hard option is given for user to click on|Easy and hard option is given for user to click on <img width="301" height="313" alt="image" src="https://github.com/user-attachments/assets/de70d5ee-020b-4947-a988-dc401b78db4f" />|n/a|
 |1.4|Player 1 guesses a correct letter|Player 1 taps a correct letter on the on-screen alphabet|Correct letter appears in the word; button turns green| | |
 |1.5|Player 1 guesses an incorrect letter|Player 1 taps a wrong letter|Letter turns red; rope/hangman progresses| | |
 |1.6|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible|"Player 2's turn" button was not appearing <img width="598" height="829" alt="Screenshot 2025-12-19 200048" src="https://github.com/user-attachments/assets/f00a75c1-2714-4642-ba0c-37e1d7745ef7" />|win.html was being linked to the lost.js, so this had to be changed to win.js <img width="803" height="667" alt="Screenshot 2025-12-19 200008" src="https://github.com/user-attachments/assets/44693585-dd1c-4690-9800-e2bf95740f51" />|
@@ -533,7 +533,7 @@ Hafsah -
 ## Success of Project
 The project was successfully completed and met all functional requirements. The game supports real-time 2-player gameplay directly on the server with minimal setup, allowing users to easily start, pause, exit, and return at any time. The interface is intuitive, with clear audio feedback for guesses, three difficulty levels, real-time competition, score tracking, and win/lose screens.
 
-During development, the exit screen was removed as it was unnecessary and streamlined the user experience. Additional features were added, including displaying which player’s turn it is, improving clarity during gameplay. Users can also access settings and instructions at any time through the gameplay menu.
+During development, the exit screen was removed as it was unnecessary and streamlined the user experience. 'Medium' diffculty level was also left out. Additional features were added, including displaying which player’s turn it is, improving clarity during gameplay. Users can also access settings and instructions at any time through the gameplay menu.
 
 With more development time, the project could be enhanced further by adding hint features, a larger vocabulary list, and a coloured keyboard to improve usability and engagement.
 
