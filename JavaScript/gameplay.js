@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Force difficulty selection
   if (!difficulty) {
-    window.location.href = "difficulty.html";
+    const urlParams = new URLSearchParams(window.location.search);
+    const difficultyParam = urlParams.get("difficulty");
+    const difficulty = difficultyParam || localStorage.getItem("difficulty");
     return;
   }
 

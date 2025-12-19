@@ -305,3 +305,12 @@ body {
         margin: -35px 0 25px;
     }
   }
+
+/* Player turn text styling */
+#playerTurn {
+    color: #92487A;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    display: inline-block;
+}

@@ -15,6 +15,7 @@ const difficulty = params.get("difficulty");
 // Create the button dynamically
 const nextBtn = document.createElement("button");
 nextBtn.id = "nextBtn";
+nextBtn.classList.add("action-btn");
 nextBtn.style.padding = "10px 20px";
 nextBtn.style.marginTop = "20px";
 nextBtn.style.fontSize = "1rem";

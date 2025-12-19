@@ -72,3 +72,24 @@ body {
   text-align: center;
   border: 2px solid #92487A;
 }
+
+/* Action button styling */
+.action-btn {
+    background-color: #f3a0b2;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+/* Hover effect */
+.action-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
