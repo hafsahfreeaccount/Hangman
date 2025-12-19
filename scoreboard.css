@@ -1,151 +1,125 @@
-/* ===============================
-Page
-================================ */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Rubik:wght@400;600;700&display=swap');
+
+* { box-sizing: border-box; }
+
 body {
-margin: 0;
-min-height: 100vh;
-background: #8D7D7D;
-
-display: flex;
-justify-content: center;
-align-items: center;
-
-font-family: 'Rubik', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: #8D7D7D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
 }
 
-/* ===============================
-Scoreboard Header (FINAL)
-================================ */
+/* Container (matches your Figma-ish size) */
+.scoreboard {
+  width: 323px;
+  min-height: 482px;
+  background: #FCF5EE;
+  border: 6px solid #FFC4C4;
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* Header */
 .scoreboard-header {
-height: 79px; /* matches Figma height */
-
-background: linear-gradient(
-90deg,
-#92487A 0%,
-#7A2E73 50%,
-#540863 100%
-);
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-padding: 0 18px;
-border-radius: 22px;
-
-box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  height: 79px;
+  background: linear-gradient(90deg, #92487A 0%, #7A2E73 50%, #540863 100%);
+  border-radius: 22px;
+  padding: 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* SCOREBOARD title */
 .scoreboard-header h1 {
-font-family: 'Rubik', sans-serif;
-font-size: 22px;
-font-weight: 700;
-letter-spacing: 0.06em;
-
-color: #FFFFFF;
-margin: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
 }
 
-/* Close button (pink circle, purple X) */
+/* Close button */
 .close-btn {
-width: 28px;
-height: 28px;
-
-background-color: #FFC4C4;
-border: none;
-border-radius: 50%;
-
-color: #92487A;
-font-size: 18px;
-font-weight: bold;
-
-display: grid;
-place-items: center;
-
-cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #FFC4C4;
+  border: none;
+  color: #92487A;
+  font-size: 18px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
 
-/* ===============================
-Player cards
-================================ */
+/* Player cards */
 .player-score {
-background: #92487A;
-border-radius: 22px;
-padding: 16px 20px;
-margin: 18px 0;
-
-box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  margin-top: 18px;
+  background: #92487A;
+  border-radius: 22px;
+  padding: 16px 20px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  color: #fff;
 }
 
 .player-score h2 {
-font-family: 'Fredoka', sans-serif;
-font-size: 18px;
-margin: 0 0 6px;
-
-color: #FFFFFF;
-
-/* pink text outline */
-text-shadow:
--1px 0 #FFC4C4,
-1px 0 #FFC4C4,
-0 -1px #FFC4C4,
-0 1px #FFC4C4;
+  margin: 0 0 6px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 18px;
+  text-shadow:
+    -1px 0 #FFC4C4,
+     1px 0 #FFC4C4,
+     0 -1px #FFC4C4,
+     0  1px #FFC4C4;
 }
 
 .player-score p {
-font-size: 16px;
-font-weight: 600;
-margin: 0;
-color: #FFFFFF;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-/* ===============================
-Buttons
-================================ */
+/* Buttons area */
 .scoreboard-buttons {
-margin-top: 26px;
-text-align: center;
+  margin-top: 26px;
+  text-align: center;
 }
 
-/* New game button */
 #newGameBtn {
-background: #FFC4C4;
-border: none;
-border-radius: 32px;
-padding: 14px 46px;
-
-font-family: 'Fredoka', sans-serif;
-font-size: 20px;
-color: #FFFFFF;
-cursor: pointer;
-
-/* purple text outline only */
-text-shadow:
--1px 0 #540863,
-1px 0 #540863,
-0 -1px #540863,
-0 1px #540863;
-
-box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  background: #FFC4C4;
+  border: none;
+  border-radius: 32px;
+  padding: 14px 46px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-shadow:
+    -1px 0 #540863,
+     1px 0 #540863,
+     0 -1px #540863,
+     0  1px #540863;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
 }
 
-/* Main menu link */
 .scoreboard-buttons a {
-display: block;
-margin-top: 10px;
-
-font-size: 13px;
-color: #FFFFFF;
-
-text-decoration: underline;
-text-decoration-color: #92487A;
-text-decoration-thickness: 2px;
-
-/* purple text outline */
-text-shadow:
--1px 0 #92487A,
-1px 0 #92487A,
-0 -1px #92487A,
-0 1px #92487A;
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #92487A;
+  text-decoration-thickness: 2px;
+  text-shadow:
+    -1px 0 #92487A,
+     1px 0 #92487A,
+     0 -1px #92487A,
+     0  1px #92487A;
 }
