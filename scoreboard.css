@@ -32,16 +32,18 @@ Header
 (Figma: 323.4 x 79.2)
 ================================ */
 .scoreboard-header {
-height: 79.2px;
+height: 79px;
 
 background: linear-gradient(
 90deg,
-#92487A 100%,#FFC4C4 0%, #EE6983 100%
+#92487A 0%,
+#7A2E73 50%,
+#540863 100%
 );
 
 border-radius: 22px;
 padding: 0 18px;
-
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -50,9 +52,9 @@ justify-content: space-between;
 /* SCOREBOARD text */
 .scoreboard-header h1 {
 font-family: 'Rubik', sans-serif;
-font-size: 24px;
-font-weight: bold;
-letter-spacing: 0.03em;
+font-size: 22px;
+font-weight: 700;
+letter-spacing: 0.06em;
 
 color: #FFFFFF;
 margin: 0;
@@ -73,7 +75,7 @@ background: #FFC4C4;
 color: #92487A;
 
 font-weight: bold;
-font-size: 14px;
+font-size: 18px;
 cursor: pointer;
 }
 
@@ -161,3 +163,4 @@ text-shadow:
 0 -1px #92487A,
 0 1px #92487A;
 }
+
