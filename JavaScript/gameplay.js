@@ -35,6 +35,10 @@ const closeExitBtn = document.getElementById("closeExit");
 const exitYesBtn = document.getElementById("exit-yes");
 const exitNoBtn = document.getElementById("exit-no");
 
+// Hangman controls
+const leftLeg = document.querySelector(".hangman-part.left-leg");
+const rightLeg = document.querySelector(".hangman-part.right-leg");
+
 // Track where instructions opened from
 let instructionsFromPause = false;
 
@@ -54,11 +58,31 @@ function closeExitOverlay() {
   hideOverlay(exitOverlay);
 }
 
-function showHangmanPart(partNumber) {
-    if (hangmanParts[partNumber - 1]) {
-        hangmanParts[partNumber - 1].style.display = "block";
+function showHangmanPart(wrongGuesses) {
+    const partsOrder = [...hangmanParts].filter(
+        p => !p.classList.contains("left-leg") && !p.classList.contains("right-leg")
+    );
+
+    if (wrongGuesses <= partsOrder.length) {
+        partsOrder[wrongGuesses - 1].style.display = "block";
+        return;
+    }
+
+    // EASY MODE LEG LOGIC
+    if (difficulty === "easy") {
+        if (wrongGuesses === 6) {
+            leftLeg.style.display = "block";
+        } else if (wrongGuesses === 8) {
+            rightLeg.style.display = "block";
+        }
+    } else {
+        // Hard/normal mode: show legs normally
+        if (hangmanParts[wrongGuesses - 1]) {
+            hangmanParts[wrongGuesses - 1].style.display = "block";
+        }
     }
 }
+
 
 
 /* ===============================
@@ -223,11 +247,15 @@ if (exitYesBtn) {
 
     // CHECK LOSE
     function checkLose() {
-        if (wrongGuesses >= maxWrong) {
+    if (wrongGuesses >= maxWrong) {
+        showHangmanPart(wrongGuesses);
+
+        setTimeout(() => {
             alert(`💀 You Lost! Word was "${selectedWord}"`);
             disableKeyboard();
+          }, 0);
         }
-    }
+      }
 
     function disableKeyboard() {
         keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = true);
