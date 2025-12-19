@@ -525,8 +525,14 @@ Initially, we were considering using react native to develop a mobile app as it 
 
 
 ## Individual Contributions
-Rushda -
+Rushda - Designed the gameplay screen, the “You lose” wireframe and pause menu. Created gameplay flowchart and test table. Coded the starting and landing screen as well as coding the ‘hangman’ visual, enforcing the 2-player state alongside the “You lose” screen. I also added the pause menu along with the corresponding icons.
 Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart, created home page, difficulty level, summarised gameplay and scoreboard pseudocode and coded instructions, exit and pause menu and points for scoreboard scoring screens. 
 Hafsah -
 
 ## Success of Project
+The project was successfully completed and met all functional requirements. The game supports real-time 2-player gameplay directly on the server with minimal setup, allowing users to easily start, pause, exit, and return at any time. The interface is intuitive, with clear audio feedback for guesses, three difficulty levels, real-time competition, score tracking, and win/lose screens.
+
+During development, the exit screen was removed as it was unnecessary and streamlined the user experience. Additional features were added, including displaying which player’s turn it is, improving clarity during gameplay. Users can also access settings and instructions at any time through the gameplay menu.
+
+With more development time, the project could be enhanced further by adding hint features, a larger vocabulary list, and a coloured keyboard to improve usability and engagement.
+
