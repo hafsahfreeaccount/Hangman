@@ -506,10 +506,10 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.2|Start a game|Click play button|Landing screen loads for 2 seconds|Button was not working when pressed (Was not being directed to landing screen)|I had not given the playbutton an ID so the javascript was not being implemented. ID was added to change this <img width="937" height="616" alt="Screenshot 2025-12-09 201047" src="https://github.com/user-attachments/assets/ad49692d-c5be-4aab-855d-9b4d0c23b492" />|
 |**1.2 (Retest)**|Start a game|Click play button|Landing screen loads for 2 seconds|Landing screen loads for 2 seconds <img width="297" height="413" alt="image" src="https://github.com/user-attachments/assets/a734cc4b-1d5f-42b5-ab91-c47e0052879c" />|n/a|
 |1.3|Choose a difficulty level|Click easy or hard|Easy and hard option is given for user to click on|Easy and hard option is given for user to click on <img width="301" height="313" alt="image" src="https://github.com/user-attachments/assets/de70d5ee-020b-4947-a988-dc401b78db4f" />|n/a|
-|1.4|Player 1 guesses a correct letter|Player 1 taps a correct letter on the on-screen alphabet|Correct letter appears in the word; button turns green| | |
-|1.5|Player 1 guesses an incorrect letter|Player 1 taps a wrong letter|Letter turns red; rope/hangman progresses| | |
+|1.4|Player 1 guesses a correct letter|Player 1 taps a correct letter on the on-screen alphabet|Correct letter appears in the word; button turns into faded colour|Correct letter appears in the word; button turns into faded colour <img width="239" height="415" alt="image" src="https://github.com/user-attachments/assets/e01ecc0f-be9b-4a0d-a39c-87f5ab3db01d" />|n/a|
+|1.5|Player 1 guesses an incorrect letter|Player 1 taps a wrong letter|Letter turns into faded colour; rope/hangman progresses|Letter turns into faded colour; rope/hangman progresses <img width="239" height="415" alt="image" src="https://github.com/user-attachments/assets/a49d7d32-96d5-433c-b0fa-ef5a590e850f" />|n/a|
 |1.6|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible|"Player 2's turn" button was not appearing <img width="598" height="829" alt="Screenshot 2025-12-19 200048" src="https://github.com/user-attachments/assets/f00a75c1-2714-4642-ba0c-37e1d7745ef7" />|win.html was being linked to the lost.js, so this had to be changed to win.js <img width="803" height="667" alt="Screenshot 2025-12-19 200008" src="https://github.com/user-attachments/assets/44693585-dd1c-4690-9800-e2bf95740f51" />|
-|**1.6 (Retest)**|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible|| |
+|**1.6 (Retest)**|Player 1 wins|Player 1 completes the word|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible|Win screen loads (“YOU WON!”), points displayed, “Player 2’s Turn >” button visible <img width="331" height="443" alt="image" src="https://github.com/user-attachments/assets/15e467be-6bf3-4c92-a9a2-0b8d3549bf00" /> <img width="299" height="414" alt="image" src="https://github.com/user-attachments/assets/a077ef77-f45a-47d4-bb4c-50e2bf603a30" />|n/a|
 |1.7|Player 1 loses|Player 1 runs out of attempts|Lose screen loads, correct word displayed, “Player 2’s Turn >” button visible| | |
 |1.8|Start Player 2 turn|Player 2 clicks “Player 2’s Turn >”|A new gameplay screen loads for Player 2 with a new word| | |
 |1.9|Player 2 guesses letters|Player 2 plays normally|Correct/incorrect visual feedback plays as expected| | |
@@ -527,7 +527,9 @@ Initially, we were considering using react native to develop a mobile app as it 
 
 ## Individual Contributions
 Rushda - Designed the gameplay screen, the “You lose” wireframe and pause menu. Coded the starting and landing screen as well as coding the ‘hangman’ visual, enforcing the 2-player state alongside the “You lose” screen. I also added the pause menu along with the corresponding icons.
-Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart, created home page, difficulty level, summarised gameplay and scoreboard pseudocode and coded instructions, exit and pause menu and points for scoreboard scoring screens. 
+
+Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart, created home page, difficulty level, summarised gameplay and scoreboard pseudocode and coded instructions, exit and pause menu and points for scoreboard scoring screens.
+
 Hafsah -
 
 ## Success of Project
