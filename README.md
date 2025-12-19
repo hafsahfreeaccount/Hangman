@@ -530,7 +530,7 @@ Rushda - Designed the gameplay screen, the “You lose” wireframe and pause me
 
 Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart, created home page, difficulty level, summarised gameplay and scoreboard pseudocode and coded instructions, exit and pause menu and points for scoreboard scoring screens.
 
-Hafsah -
+Hafsah - Designed the you win, scoreboard wireframes. Developed the keyboard with the logic. Developed the difficulty levels page, you win screen. Fixed errors that came across while developing. Added a limit for incorrect guesses. 
 
 ## Success of Project
 The project was successfully completed and met all functional requirements. The game supports real-time 2-player gameplay directly on the server with minimal setup, allowing users to easily start, pause, exit, and return at any time. The interface is intuitive, with clear audio feedback for guesses, three difficulty levels, real-time competition, score tracking, and win/lose screens.
