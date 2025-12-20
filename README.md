@@ -518,7 +518,8 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.12|Final scoreboard displays|After Player 2’s round ends|Scoreboard loads showing Player 1 score + Player 2 score| | |
 |1.13|Pause button works|Player clicks pause icon during gameplay|Game freezes; input disabled until resumed|Game freezes; input disabled until resumed <img width="300" height="412" alt="image" src="https://github.com/user-attachments/assets/53ea08cc-534f-4105-8b8f-61f86c28b633" />|n/a|
 |1.14|Resume gameplay|Click resume button|Game continues from same state|Game continues from same state|n/a|
-|1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state| | |
+|1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state| ![IMG_1853](https://github.com/user-attachments/assets/b061da12-d88b-4277-8091-6c7c12ded001)
+| |
 |1.16|Restart game during Player 1 or Player 2|Click restart button in pause menu|Current player's round resets with a new word|Current player's round resets with a new word|n/a|
 |1.17|Exit to home menu|Click exit in settings|Player is returned to the home screen|Player is returned to the home screen|n/a|
 |1.18|Prevent double input|Tap the same letter twice|Second tap ignored, no error|Second tap ignored, no error|n/a|
