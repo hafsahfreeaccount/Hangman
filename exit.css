@@ -1,0 +1,79 @@
+/* RESET */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Rubik", sans-serif;
+}
+
+/* OVERLAY */
+body {
+min-height: 100vh;
+background: #6d5a5a;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* MODAL */
+.modal {
+width: 320px;
+background: #fff2eb;
+border-radius: 18px;
+box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+overflow: hidden;
+text-align: center;
+}
+
+/* HEADER (ON TOP) */
+.exit-header {
+position: relative;
+padding: 14px;
+background: linear-gradient(90deg, #b85d86, #f2a7b8);
+color: white;
+}
+
+.exit-header h2 {
+font-size: 1.4rem;
+letter-spacing: 1px;
+}
+
+/* CLOSE BUTTON */
+.exit-close {
+position: absolute;
+top: 8px;
+right: 10px;
+width: 26px;
+height: 26px;
+border-radius: 50%;
+border: none;
+background: #FFC4CF;
+color: #92487A;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* CONTENT */
+.exit-body {
+padding: 22px;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+/* YES + NO BUTTONS (SAME STYLE) */
+.exit-btn {
+padding: 12px;
+border-radius: 20px;
+border: none;
+background: #E49BA6;
+color: white;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.2s ease;
+}
+
+.exit-btn:hover {
+background: #D48896;
+}
