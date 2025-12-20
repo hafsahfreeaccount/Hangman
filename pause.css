@@ -1,0 +1,79 @@
+/* RESET */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Rubik", sans-serif;
+}
+
+/* OVERLAY */
+.pause-overlay {
+min-height: 100vh;
+background: rgba(0, 0, 0, 0.45);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* MODAL */
+.pause-popup {
+width: 320px;
+background: #FFF2EB;
+border-radius: 18px;
+border: 3px solid #92487A;
+box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+overflow: hidden;
+text-align: center;
+}
+
+/* HEADER */
+.pause-header {
+position: relative;
+padding: 14px;
+background: linear-gradient(90deg, #92487A, #F3A0B2, #92487A);
+color: #FFFFFF;
+}
+
+.pause-header h1 {
+font-size: 22px;
+letter-spacing: 0.06em;
+}
+
+/* CLOSE BUTTON */
+.pause-close {
+position: absolute;
+top: 8px;
+right: 10px;
+width: 26px;
+height: 26px;
+border-radius: 50%;
+background: #FFC4C4;
+border: none;
+color: #92487A;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* CONTENT */
+.pause-content {
+padding: 22px;
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+/* BUTTONS */
+.pause-content button {
+padding: 12px;
+border-radius: 20px;
+border: none;
+background: #E49BA6;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+.pause-content button:hover {
+opacity: 0.9;
+}
