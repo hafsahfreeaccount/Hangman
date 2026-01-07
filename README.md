@@ -514,7 +514,7 @@ Initially, we were considering using react native to develop a mobile app as it 
 ## Individual Contributions
 Rushda - Designed the gameplay screen, the “You lose” wireframe and pause menu. Coded the starting and landing screen as well as coding the ‘hangman’ visual, enforcing the 2-player state alongside the “You lose” screen. I also added the pause menu along with the corresponding icons.
 
-Khadijah - Designed starting, loading and difficulty level wireframes. Created home page, difficulty level, summarised gameplay and scoreboard pseudocode. Coded instructions and points for scoreboard scoring screens.
+Khadijah - Designed starting, loading and difficulty level wireframes. Created home page, difficulty level, summarised gameplay and scoreboard pseudocode. Coded instructions and attempted points for scoreboard scoring screens.
 
 Hafsah - Designed the you win, scoreboard wireframes. Developed the keyboard with the logic. Developed the difficulty levels page, you win screen. Fixed errors that came across while developing. Added a limit for incorrect guesses. 
 
