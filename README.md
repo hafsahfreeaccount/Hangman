@@ -501,7 +501,7 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.9|Player 2 guesses letters|Player 2 plays normally|Correct/incorrect visual feedback plays as expected|Correct/incorrect visual feedback plays as expected|n/a|
 |1.10|Player 2 completes word|Player 2 wins their round|“YOU WON!” screen appears with "Next" button|“YOU WON!” screen appears with "Next" button <img width="292" height="470" alt="image" src="https://github.com/user-attachments/assets/6488e4f4-9310-4e23-bc34-25708da1605a" /> <img width="259" height="374" alt="image" src="https://github.com/user-attachments/assets/6f095e7c-8744-4913-91ae-91d15dc61bbc" />|n/a|
 |1.11|Player 2 fails the word|Player 2 runs out of attempts|“YOU LOST!” screen appears with "Next" button|“YOU LOST!” screen appears with "Next" button <img width="292" height="328" alt="image" src="https://github.com/user-attachments/assets/bb367774-244c-45c9-9713-163fba282f7a" /> <img width="259" height="373" alt="image" src="https://github.com/user-attachments/assets/a714ac37-8039-42dc-bcdc-67670d20e421" />|n/a|
-|1.12|Final scoreboard displays|After Player 2’s round ends|Scoreboard loads showing Player 1 score + Player 2 score| | |
+|1.12|Final scoreboard displays|After Player 2’s round ends|Scoreboard loads showing Player 1 score + Player 2 score| |Scoreboard shows no scores, attempted but disabled menu buttons and user input within gameplay |
 |1.13|Pause button works|Player clicks pause icon during gameplay|Game freezes; input disabled until resumed|Game freezes; input disabled until resumed <img width="300" height="412" alt="image" src="https://github.com/user-attachments/assets/53ea08cc-534f-4105-8b8f-61f86c28b633" />|n/a|
 |1.14|Resume gameplay|Click resume button|Game continues from same state|Game continues from same state|n/a|
 |1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state|
@@ -514,14 +514,14 @@ Initially, we were considering using react native to develop a mobile app as it 
 ## Individual Contributions
 Rushda - Designed the gameplay screen, the “You lose” wireframe and pause menu. Coded the starting and landing screen as well as coding the ‘hangman’ visual, enforcing the 2-player state alongside the “You lose” screen. I also added the pause menu along with the corresponding icons.
 
-Khadijah - Designed starting, loading and difficulty level wireframes. Created home page, difficulty level, summarised gameplay and scoreboard pseudocode. Coded instructions and points for scoreboard scoring screens.
+Khadijah - Designed starting, loading and difficulty level wireframes. Created home page, difficulty level, summarised gameplay and scoreboard pseudocode. Coded instructions and attempted points for scoreboard scoring screens.
 
 Hafsah - Designed the you win, scoreboard wireframes. Developed the keyboard with the logic. Developed the difficulty levels page, you win screen. Fixed errors that came across while developing. Added a limit for incorrect guesses. 
 
 ## Success of Project
-The project was successfully completed and met all functional requirements. The game supports real-time 2-player gameplay directly on the server with minimal setup, allowing users to easily start, pause, exit, and return at any time. The interface is intuitive, with clear audio feedback for guesses, two difficulty levels, real-time competition, score tracking, and win/lose screens.
+The project was mostly successful in completion and met majority of functional requirements. The game supports real-time 2-player gameplay directly on the server with minimal setup, allowing users to easily start, pause, exit, and return at any time. The interface is intuitive, with clear audio feedback for guesses, two difficulty levels, real-time competition, score tracking, and win/lose screens.
 
-During development, the exit screen was removed to streamline the user experience. 'Medium' difficulty level was also left out. Additional features were added, including displaying which player’s turn it is, improving clarity during gameplay. Users can also access settings and instructions at any time through the gameplay menu.
+During development, the exit screen was removed to streamline the user experience. 'Medium' difficulty level was also left out. Scoreboard does not display scores due to scoring functions not being integrated within gameplay beyond guess tracking and attempts counted and integration issues during initial implementation. Additional features were added, including displaying which player’s turn it is, improving clarity during gameplay. Users can also access settings and instructions at any time through the gameplay menu. 
 
 With more development time, the project could be enhanced further by adding hint features, a larger vocabulary list, and a coloured keyboard to improve usability and engagement.
 
