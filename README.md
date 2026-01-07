@@ -518,8 +518,7 @@ Initially, we were considering using react native to develop a mobile app as it 
 |1.12|Final scoreboard displays|After Player 2’s round ends|Scoreboard loads showing Player 1 score + Player 2 score| | |
 |1.13|Pause button works|Player clicks pause icon during gameplay|Game freezes; input disabled until resumed|Game freezes; input disabled until resumed <img width="300" height="412" alt="image" src="https://github.com/user-attachments/assets/53ea08cc-534f-4105-8b8f-61f86c28b633" />|n/a|
 |1.14|Resume gameplay|Click resume button|Game continues from same state|Game continues from same state|n/a|
-|1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state| ![IMG_1853](https://github.com/user-attachments/assets/b061da12-d88b-4277-8091-6c7c12ded001)
-| |
+|1.15|“Help” icon displays instructions|Click ? icon|Instructions modal appears without interrupting game state|
 |1.16|Restart game during Player 1 or Player 2|Click restart button in pause menu|Current player's round resets with a new word|Current player's round resets with a new word|n/a|
 |1.17|Exit to home menu|Click exit in settings|Player is returned to the home screen|Player is returned to the home screen|n/a|
 |1.18|Prevent double input|Tap the same letter twice|Second tap ignored, no error|Second tap ignored, no error|n/a|
@@ -529,14 +528,14 @@ Initially, we were considering using react native to develop a mobile app as it 
 ## Individual Contributions
 Rushda - Designed the gameplay screen, the “You lose” wireframe and pause menu. Coded the starting and landing screen as well as coding the ‘hangman’ visual, enforcing the 2-player state alongside the “You lose” screen. I also added the pause menu along with the corresponding icons.
 
-Khadijah - Designed starting, loading and difficulty level wireframes, homepage flowchart, created home page, difficulty level, summarised gameplay and scoreboard pseudocode and coded instructions, exit and pause menu and points for scoreboard scoring screens.
+Khadijah - Designed starting, loading and difficulty level wireframes. Created home page, difficulty level, summarised gameplay and scoreboard pseudocode. Coded instructions and points for scoreboard scoring screens.
 
 Hafsah - Designed the you win, scoreboard wireframes. Developed the keyboard with the logic. Developed the difficulty levels page, you win screen. Fixed errors that came across while developing. Added a limit for incorrect guesses. 
 
 ## Success of Project
-The project was successfully completed and met all functional requirements. The game supports real-time 2-player gameplay directly on the server with minimal setup, allowing users to easily start, pause, exit, and return at any time. The interface is intuitive, with clear audio feedback for guesses, three difficulty levels, real-time competition, score tracking, and win/lose screens.
+The project was successfully completed and met all functional requirements. The game supports real-time 2-player gameplay directly on the server with minimal setup, allowing users to easily start, pause, exit, and return at any time. The interface is intuitive, with clear audio feedback for guesses, two difficulty levels, real-time competition, score tracking, and win/lose screens.
 
-During development, the exit screen was removed as it was unnecessary and streamlined the user experience. 'Medium' diffculty level was also left out. Additional features were added, including displaying which player’s turn it is, improving clarity during gameplay. Users can also access settings and instructions at any time through the gameplay menu.
+During development, the exit screen was removed to streamline the user experience. 'Medium' difficulty level was also left out. Additional features were added, including displaying which player’s turn it is, improving clarity during gameplay. Users can also access settings and instructions at any time through the gameplay menu.
 
 With more development time, the project could be enhanced further by adding hint features, a larger vocabulary list, and a coloured keyboard to improve usability and engagement.
 
