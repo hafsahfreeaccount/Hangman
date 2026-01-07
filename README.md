@@ -195,7 +195,7 @@ IF user presses ‘Play’ THEN
 
 ## Difficulty Level Pseudocode
 //The player decides which level they want to play on (this automatically set lives for both players).
-   Present easy, medium, hard options 
+   Present easy and hard options 
    Wait for user to choose difficulty level of choice
 
    IF user picks ‘Easy’ THEN 
@@ -219,31 +219,19 @@ IF user clicks Pause THEN
 
 IF user picks 'Resume' THEN 
    Hide pause menu from view 
-   Navigate back to gameplay  // return to game exactly where they left off.
+   Return to gameplay  // return to game exactly where they left off.
       ENDIF 
       
 IF user picks 'Restart' THEN 
-   Reboot correctGuessCounter  //refresh guess history for new round
-   Reboot wrongGuessCounter
-   Reboot lives for set difficulty  //the player starts with full lives to start off with
-   Reboot word and score for new round 
-   Return to gameplay //restart the game for a new round
+   Reload current gameplay page //restart the game for a new round
       ENDIF 
       
 IF user picks 'Help' THEN  //in-game instructions overlay 
    Open Instructions screen  //show game rules/instructions for player to read
-   Pause until user clicks 'Exit' or 'Back' 
-   Remove Instructions screen from view 
-   Return to pause menu //return to menu options
       ENDIF 
       
-   IF user clicks 'Home' THEN  //exit game confirmation popup
-   Open exit overlay //ask if the user wants to quit or continue playing
-   IF user clicks 'Yes' THEN
-   Hide gameplay screen from user view 
-   Present homepage to user  //ends the game and return to start 
-   ELSE 
-Return user view to gameplay //cancel quit
+   IF user clicks 'Home' THEN  //exit gameplay
+  Navigate to homepage
       ENDIF 
 ENDIF 
 ENDIF 
@@ -251,23 +239,28 @@ ENDIF
 ## Gameplay Summary Pseudocode
 //Handles win/lose checking, scoring and turn taking between both players.
 
-WHILE game is running DO
-//Checks if the player completed the word before running out of lives. 
-IF all letters guessed before lives go to zero THEN 
-   Result = 'win' 
-   ELSE Result = 'lose' 
-      ENDIF 
-//Calculate current round points based on difficulty and lives remaining left over from player's gameplay.
-   CALL currentroundpoints (difficulty, lives_remaining) RETURNING currentroundpoints 
+//Player plays one round per session
 
-   Change score for current player currentplayerpoints = currentplayerpoints + currentroundpoints // This updates player 1’s total score*
-//Waits for player 1 to confirm Player 2's Turn before switching players.
-   Wait for player 1 to change over
-   
+WHILE lives > 0 and word not complete DO
+Player guesses a letter
+IF guess is incorrect THEN
+   Decrement lives
+	ENDIF
+ENDWHILE
+      
+IF word completed THEN
+	Result = Win
+ELSE
+	Result = Lose
+ENDIF
+
+ 
+//Calculate current round points based on difficulty and lives remaining left 
+    Store updated score for current player
+Move to win or lose screen with player and difficulty data 
+
 IF player 1 clicks ‘Player 2’s Turn’ THEN 
-    Reboot correctGuessCounter
-    Reboot wrongGuessCounter
-   Reboot lives 
+	Reboot lives 
    Reboot word for current difficulty 
 
    Switch to player 2 
@@ -277,9 +270,8 @@ IF player 1 clicks ‘Player 2’s Turn’ THEN
    Player 2 guesses letters 
       IF all letters guessed or lives = 0 THEN 
          end current round 
-      CALL currentroundpoints (difficulty, lives_remaining) //calls currentroundpoint calculations 
-      Change score for current player //This updates player 2’s score 
-      currentplayerpoints = currentplayerpoints + currentroundpoints 
+       Update player 2’s score 
+      
          ENDIF 
 ENDWHILE
 
