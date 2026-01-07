@@ -199,19 +199,13 @@ IF user presses ‘Play’ THEN
    Wait for user to choose difficulty level of choice
 
    IF user picks ‘Easy’ THEN 
-   Assign lives to 15  // easiest mode receives the most lives/custom lives for each level
+   Assign lives to 8 // easiest mode receives the most lives/custom lives for each level
    Assign difficulty as easy 
    Load easy gameplay  // goes right into the gameplay screen
       ENDIF 
       
-IF user picks ‘Medium’ THEN 
-Assign lives to 12 // moderate difficulty level 
-Assign difficulty as medium 
-Load medium gameplay 
-   ENDIF 
-
 IF user picks ‘Hard’ THEN 
-Assign lives to 9          // hardest lives has the least lives
+Assign lives to 6        // hardest lives has the least lives
 Assign difficulty as hard 
 Load hard gameplay 
    ENDIF 
