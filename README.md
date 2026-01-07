@@ -11,7 +11,7 @@ Our primary target audience includes high school and college students aged 13-18
 4. Users can stop and return any time. 
 5. Users can guess words and receive immediate audio feedback.
 6. Users can compete against peers in real-time.
-7. Users can play with 3 difficulty levels: easy, medium and hard. 
+7. Users can play with 2 difficulty levels: easy and hard. 
 8. The players can view the scoreboard and track their scores.
 9. Users are displayed a you win or you lose screen accordingly.
 10. Users can easily pause, exit and restart the game through the settings menu on the gameplay.
